@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: d7b43b7fb16298b46b15ba257a8d6c27
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 5bfe80c64d6e9674a8b0c8bee891d3da
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 738184a02aee10740ba6f7bde7653c86
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 820e538a04919cc48a83efddf713d185
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: a3ac2a6c2b772c64ebb06359db27074f
+  - enabled: 1
+    path: Assets/Scenes/Level5.unity
+    guid: e6703e23fa8efb546bef150d9e38a535
+  - enabled: 1
+    path: Assets/Scenes/Finished.unity
+    guid: 4a75f9df56f2b084797309c97b0e7622
+  - enabled: 1
+    path: Assets/Scenes/Score.unity
+    guid: 7df984d756ef1754ab7628f555774138
+  - enabled: 1
+    path: Assets/Scenes/Levelmanager.unity
+    guid: 95d99a6251372c4489b7bfe76c8830ea
+  - enabled: 1
+    path: Assets/Scenes/Explanation Multiplayer.unity
+    guid: 1cffb4d65f5f3cb4a810057e4bafdf84
+  - enabled: 1
+    path: Assets/Scenes/Level1_Multiplayer.unity
+    guid: 5ea13eb1d281b2442bdbe44447f92192
+  - enabled: 1
+    path: Assets/Scenes/Winner.unity
+    guid: 11d87a53ad4e0ab419159e406f4448e7
+  - enabled: 1
+    path: Assets/Scenes/Level2_Multiplayer.unity
+    guid: 05ce7b6ea3029a64ca2f6d7090103618
+  - enabled: 1
+    path: Assets/Scenes/Level3_Multiplayer.unity
+    guid: 3eb72723fe231194abdd587b0d03620e
+  - enabled: 1
+    path: Assets/Scenes/WinnerFinished.unity
+    guid: 1c4777655df5b324e9f615f084fe6ee4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects: {}

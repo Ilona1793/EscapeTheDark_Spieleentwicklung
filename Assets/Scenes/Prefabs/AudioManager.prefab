@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3161377846516804705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3161377846516804704}
+  - component: {fileID: 3161377846516804711}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3161377846516804704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161377846516804705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 77.9829, y: 137.5, z: 98.527176}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3161377846516804711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161377846516804705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd412115c2737548b57bb9d01f20fb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 0d419de1501a4674883301bf78703249, type: 3}
+    volume: 0.15
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Clock
+    clip: {fileID: 8300000, guid: c9c78332766e7be40b509732a21579ce, type: 3}
+    volume: 0.566
+    pitch: 1.2
+    loop: 0
+    source: {fileID: 0}
+  - name: Goal
+    clip: {fileID: 8300000, guid: f001c37829157404b8784348384c533b, type: 3}
+    volume: 0.403
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Arrow
+    clip: {fileID: 8300000, guid: 5af144c7deb1ee74c82ffc761dc682d5, type: 3}
+    volume: 0.489
+    pitch: 1.26
+    loop: 0
+    source: {fileID: 0}
+  - name: Countdown
+    clip: {fileID: 8300000, guid: 612c4be1ae516214e99b80d9849e371c, type: 3}
+    volume: 0.358
+    pitch: 1.12
+    loop: 0
+    source: {fileID: 0}
+  - name: Countdown-Go
+    clip: {fileID: 8300000, guid: 6d0eeb20016a1564fa5517e0df32e393, type: 3}
+    volume: 0.358
+    pitch: 1.12
+    loop: 0
+    source: {fileID: 0}
+  - name: Fall
+    clip: {fileID: 8300000, guid: 4992a164d3d754b439a83107bb158265, type: 3}
+    volume: 0.358
+    pitch: 1.12
+    loop: 0
+    source: {fileID: 0}
