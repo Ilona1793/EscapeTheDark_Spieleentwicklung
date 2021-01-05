@@ -1,39 +1,39 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ClearSight : MonoBehaviour
 {
+    public Transform playerTransform;
 
-        public float DistanceToPlayer = 5.0f;
-        public Material TransparentMaterial = null;
-        public float FadeInTimeout = 0.6f;
-        public float FadeOutTimeout = 0.2f;
-        public float TargetTransparency = 0.3f;
-        private void Update()
+    private void Update()
+    {
+        RaycastHit[] hits;
+        Vector3 dir = playerTransform.position - transform.position;
+
+        hits = Physics.RaycastAll(transform.position, dir, 10f);
+
+        foreach (RaycastHit hit in hits)
         {
-            RaycastHit[] hits; // you can also use CapsuleCastAll() 
-                               // TODO: setup your layermask it improve performance and filter your hits. 
-            hits = Physics.RaycastAll(transform.position, transform.forward, DistanceToPlayer);
-            foreach (RaycastHit hit in hits)
+            // hit gameobject should be tagged and be in front of the player
+            if (hit.collider.CompareTag("FadeOut") && IsInFrontOfPlayer(hit.distance))
             {
-                Renderer R = hit.collider.GetComponent<Renderer>();
-                if (R == null)
-                {
-                    continue;
-                }
-                // no renderer attached? go to next hit 
-                // TODO: maybe implement here a check for GOs that should not be affected like the player
-                AutoTransparent AT = R.GetComponent<AutoTransparent>();
-                if (AT == null) // if no script is attached, attach one
-                {
-                    AT = R.gameObject.AddComponent<AutoTransparent>();
-                    AT.TransparentMaterial = TransparentMaterial;
-                    AT.FadeInTimeout = FadeInTimeout;
-                    AT.FadeOutTimeout = FadeOutTimeout;
-                    AT.TargetTransparency = TargetTransparency;
-                }
-                AT.BeTransparent(); // get called every frame to reset the falloff
+                var fadingObject = hit.collider.GetComponent<FadeOutObject>();
+                fadingObject.FadeOut();
             }
+
         }
     }
+
+    /// <summary>
+    /// If the distance of the hit object is less than the distance to the player the object is in between the player and camera
+    /// </summary>
+    /// <param name="distance"></param>
+    /// <returns></returns>
+    private bool IsInFrontOfPlayer(float distance)
+    {
+        float distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);
+        return distance < distanceToPlayer;
+    }
+}

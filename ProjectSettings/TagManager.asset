@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Clock
   - Arrow
+  - FadeOut
   layers:
   - Default
   - TransparentFX
