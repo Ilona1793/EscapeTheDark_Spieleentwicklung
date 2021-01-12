@@ -29,7 +29,7 @@ public class RestartLevelOnCollision : MonoBehaviour
         if (collision.collider.tag == strTag)
         {
             FindObjectOfType<AudioManager>().Play("Fall");
-            if (_safePoint.respawnHexagon)
+            if (_safePoint != null && _safePoint.respawnHexagon)
             {
                 Player.transform.position = RespawnPoint.transform.position;
             }
