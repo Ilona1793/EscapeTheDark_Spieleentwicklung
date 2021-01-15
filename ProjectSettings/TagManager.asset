@@ -9,6 +9,8 @@ TagManager:
   - Clock
   - Arrow
   - FadeOut
+  - DestroyObject
+  - FadeOutGlow
   layers:
   - Default
   - TransparentFX

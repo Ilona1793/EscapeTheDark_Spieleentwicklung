@@ -4925,6 +4925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0, y: 0, z: 0.3}
   keyPostitiv: 119
+  keyPostitiv2: 273
   keyNegative: 115
   startGame: 0
   stopGame: 0
@@ -4942,6 +4943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0.3, y: 0, z: 0}
   keyPostitiv: 100
+  keyPostitiv2: 0
   keyNegative: 97
   startGame: 0
   stopGame: 0
@@ -5051,6 +5053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0.3, y: 0, z: 0}
   keyPostitiv: 275
+  keyPostitiv2: 0
   keyNegative: 276
   startGame: 0
   stopGame: 0
@@ -5061,13 +5064,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363644224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dab764c4a6a4c6242ae8892db48807d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   v3Force: {x: 0, y: 0, z: 0.3}
   keyPostitiv: 273
+  keyPostitiv2: 0
   keyNegative: 274
   startGame: 0
   stopGame: 0

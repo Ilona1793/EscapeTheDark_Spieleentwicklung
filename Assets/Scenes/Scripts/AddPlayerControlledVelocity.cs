@@ -12,9 +12,15 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     KeyCode keyPostitiv;
 
     [SerializeField]
+    KeyCode keyPostitiv2;
+
+    [SerializeField]
     KeyCode keyNegative;
 
-    
+    [SerializeField]
+    KeyCode keyNegative2;
+
+
     public bool startGame;
 
     //add:
@@ -37,10 +43,10 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     {
         if (startGame)
         {
-            if (Input.GetKey(keyPostitiv))
+            if (Input.GetKey(keyPostitiv) || Input.GetKey(keyPostitiv2))
                 GetComponent<Rigidbody>().velocity += v3Force;
 
-            if (Input.GetKey(keyNegative))
+            if (Input.GetKey(keyNegative) || Input.GetKey(keyNegative2))
                 GetComponent<Rigidbody>().velocity -= v3Force;
 
         }
