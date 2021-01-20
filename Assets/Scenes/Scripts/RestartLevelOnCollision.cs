@@ -13,8 +13,14 @@ public class RestartLevelOnCollision : MonoBehaviour
     [SerializeField]
     public Transform Player;
 
-    [SerializeField]
-    public Transform RespawnPoint;
+   /* [SerializeField]
+    public Transform RespawnPoint;*/
+
+    // mehrere SafePoints:
+     [SerializeField]
+     public Transform [] RespawnPoints;
+
+
 
     SafePoint _safePoint;
 
@@ -29,9 +35,9 @@ public class RestartLevelOnCollision : MonoBehaviour
         if (collision.collider.tag == strTag)
         {
             FindObjectOfType<AudioManager>().Play("Fall");
-            if (_safePoint != null && _safePoint.respawnHexagon)
+            if (_safePoint != null && _safePoint.respawnPlayer)
             {
-                Player.transform.position = RespawnPoint.transform.position;
+                Player.transform.position = RespawnPoints[_safePoint.safePointNumber].transform.position;
             }
             else {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);

@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class SafePoint : MonoBehaviour
 {
+    //mehrere Safepoints
+    [SerializeField]
+    public int safePointNumber;
 
-    public bool respawnHexagon;
+    public bool respawnPlayer;
+
 
     void Start()
     {
-        respawnHexagon = false;
+        respawnPlayer = false;
     }
 
 
@@ -17,7 +21,10 @@ public class SafePoint : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            respawnHexagon = true;
+            FindObjectOfType<AudioManager>().Play("Clock");
+            respawnPlayer = true;
+            this.gameObject.SetActive(false);
+            
         }
     }
 }

@@ -74,7 +74,7 @@ public class AddPlayerControlledVelocity : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Arrow");
 
-            if (Input.GetKey(keyPostitiv))
+            if (Input.GetKey(keyPostitiv) || Input.GetKey(keyPostitiv2))
             {
                 v3Force.z = v3Force.z + 0.5f;
                 StartCoroutine(BoostTime());
