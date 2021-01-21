@@ -2211,6 +2211,75 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 2d07a12740bb934478e15e99622927ff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ef6a566f56349d4ebff48fbc01aad19, type: 3}
+--- !u!1001 &778216138
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5027954923228998360, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnBackgroundObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 156.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 211
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 534b549adaae39144a2594e6e7beb785, type: 3}
 --- !u!1001 &778232955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5196,7 +5265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strTag: Player
   Player: {fileID: 0}
-  RespawnPoint: {fileID: 0}
+  RespawnPoints: []
 --- !u!65 &1624428431
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5397,6 +5466,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Background (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 213398529119924596, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8350892849777653428, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
         type: 3}
@@ -6762,6 +6836,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 213398529119924596, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7683860139449778810, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8022,5 +8101,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28bfe30cf598efc4b914e4e0842d5b0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeOutTimer: 10
-  interpolationFramesCount: 250
+  fadeOutTimer: 5
+  interpolationFramesCount: 500

@@ -1773,6 +1773,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 213398529119924596, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7683860140383347089, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1993,6 +1998,75 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &781259130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5027954923228998360, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_Name
+      value: SpawnBackgroundObjects
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 156.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 211
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5027954923228998362, guid: 534b549adaae39144a2594e6e7beb785,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 534b549adaae39144a2594e6e7beb785, type: 3}
 --- !u!1001 &810925796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2303,6 +2377,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 213398529119924596, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8350892849777653428, guid: 0a0f6939b6a81e440b8f0ee1787e5640,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2468,7 +2547,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0.3, y: 0, z: 0}
   keyPostitiv: 275
+  keyPostitiv2: 0
   keyNegative: 276
+  keyNegative2: 0
   startGame: 0
   stopGame: 0
 --- !u!114 &930454689
@@ -2485,7 +2566,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0, y: 0, z: 0.3}
   keyPostitiv: 273
+  keyPostitiv2: 0
   keyNegative: 274
+  keyNegative2: 0
   startGame: 0
   stopGame: 0
 --- !u!54 &930454691
@@ -3574,7 +3657,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0, y: 0, z: 0.3}
   keyPostitiv: 119
+  keyPostitiv2: 0
   keyNegative: 115
+  keyNegative2: 0
   startGame: 0
   stopGame: 0
 --- !u!114 &1363644227
@@ -3591,7 +3676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   v3Force: {x: 0.3, y: 0, z: 0}
   keyPostitiv: 100
+  keyPostitiv2: 0
   keyNegative: 97
+  keyNegative2: 0
   startGame: 0
   stopGame: 0
 --- !u!135 &1363644228
