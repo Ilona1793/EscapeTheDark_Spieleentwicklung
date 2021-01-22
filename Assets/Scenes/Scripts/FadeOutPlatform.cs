@@ -38,7 +38,7 @@ public class FadeOutPlatform : MonoBehaviour
         {
             float interpolationRatio = (float)elapsedFrames / interpolationFramesCount;
 
-            float interpolatedAlpha = Mathf.Lerp(1f, 0f, interpolationRatio);
+            float interpolatedAlpha = Mathf.Lerp(0.3f, 0f, interpolationRatio);
 
             elapsedFrames = (elapsedFrames + 1) % (interpolationFramesCount + 1);  // reset elapsedFrames to zero after it reached (interpolationFramesCount + 1)
             FadeOutObject(interpolatedAlpha);
