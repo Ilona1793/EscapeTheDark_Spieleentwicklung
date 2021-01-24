@@ -2190,7 +2190,7 @@ GameObject:
   - component: {fileID: 1363644225}
   - component: {fileID: 1363644227}
   - component: {fileID: 1363644226}
-  - component: {fileID: 1363644238}
+  - component: {fileID: 1363644232}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2328,7 +2328,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1363644238
+--- !u!114 &1363644232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2337,13 +2337,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1363644224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7eb2961772616b449c189fab62e11ed, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fa3d8bd9fa847445893d48b6c7a3f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strTag: Goal
   strSceneName: Level3
   endText: {fileID: 1611759871}
   highscoreText: {fileID: 1791564062}
+  HighScoreLevelMinutes: HighScore2 Minutes
+  HighScoreLevelSeconds: HighScore2 Seconds
+  HighScoreLevelMilliseconds: HighScore2 Milliseconds
 --- !u!4 &1544446707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1040621071328476849, guid: cefe8f0b76a26a34094e136240fef858,

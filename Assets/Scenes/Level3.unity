@@ -3475,7 +3475,7 @@ GameObject:
   - component: {fileID: 1363644226}
   - component: {fileID: 1363644235}
   - component: {fileID: 1363644225}
-  - component: {fileID: 1363644233}
+  - component: {fileID: 1363644227}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3518,6 +3518,24 @@ MonoBehaviour:
   keyNegative2: 274
   startGame: 0
   stopGame: 0
+--- !u!114 &1363644227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1363644224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa3d8bd9fa847445893d48b6c7a3f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strSceneName: Level4
+  endText: {fileID: 362248601}
+  highscoreText: {fileID: 902974583}
+  HighScoreLevelMinutes: HighScore3 Minutes
+  HighScoreLevelSeconds: HighScore3 Seconds
+  HighScoreLevelMilliseconds: HighScore3 Milliseconds
 --- !u!135 &1363644228
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3594,22 +3612,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1363644233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1363644224}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67d790aca05c30a499028b4fb46f979b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strTag: Goal
-  strSceneName: Level4
-  endText: {fileID: 362248601}
-  highscoreText: {fileID: 902974583}
 --- !u!114 &1363644235
 MonoBehaviour:
   m_ObjectHideFlags: 0
