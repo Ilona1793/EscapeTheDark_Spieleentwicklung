@@ -4629,6 +4629,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9e6ece45d2cde6547bbbf0d52834528a, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 4562a285891248648ac5b947e198fe7e,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4562a285891248648ac5b947e198fe7e,
         type: 3}
       propertyPath: m_Name
@@ -5262,9 +5267,9 @@ MonoBehaviour:
   strSceneName: Level5
   endText: {fileID: 508251474}
   highscoreText: {fileID: 1260781055}
-  HighScoreLevelMinutes: HighScore5 Minutes
-  HighScoreLevelSeconds: HighScore5 Seconds
-  HighScoreLevelMilliseconds: HighScore5 Milliseconds
+  HighScoreLevelMinutes: HighScore4 Minutes
+  HighScoreLevelSeconds: HighScore4 Seconds
+  HighScoreLevelMilliseconds: HighScore4 Milliseconds
 --- !u!1001 &1365445111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7213,6 +7218,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f9532acef27a0de4db471554e209b64f, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 4562a285891248648ac5b947e198fe7e,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4562a285891248648ac5b947e198fe7e,
         type: 3}
       propertyPath: m_Name
@@ -7888,6 +7898,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f9532acef27a0de4db471554e209b64f, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 4562a285891248648ac5b947e198fe7e,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4562a285891248648ac5b947e198fe7e,
         type: 3}
       propertyPath: m_Name
