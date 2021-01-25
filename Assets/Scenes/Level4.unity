@@ -4788,6 +4788,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9e6ece45d2cde6547bbbf0d52834528a, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 4562a285891248648ac5b947e198fe7e,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4562a285891248648ac5b947e198fe7e,
         type: 3}
       propertyPath: m_Name
@@ -5268,7 +5273,7 @@ GameObject:
   - component: {fileID: 1363644227}
   - component: {fileID: 1363644226}
   - component: {fileID: 1363644225}
-  - component: {fileID: 1363644233}
+  - component: {fileID: 1363644232}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -5406,7 +5411,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1363644233
+--- !u!114 &1363644232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5415,13 +5420,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1363644224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12ec3a66cc727d44a9987810f4bb8712, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fa3d8bd9fa847445893d48b6c7a3f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strTag: Goal
   strSceneName: Level5
   endText: {fileID: 508251474}
   highscoreText: {fileID: 1260781055}
+  HighScoreLevelMinutes: HighScore4 Minutes
+  HighScoreLevelSeconds: HighScore4 Seconds
+  HighScoreLevelMilliseconds: HighScore4 Milliseconds
 --- !u!1001 &1365445111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7370,6 +7377,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f9532acef27a0de4db471554e209b64f, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 4562a285891248648ac5b947e198fe7e,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4562a285891248648ac5b947e198fe7e,
         type: 3}
       propertyPath: m_Name
@@ -8045,6 +8057,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f9532acef27a0de4db471554e209b64f, type: 2}
+    - target: {fileID: -1504981713932161579, guid: 4562a285891248648ac5b947e198fe7e,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 4562a285891248648ac5b947e198fe7e,
         type: 3}
       propertyPath: m_Name
