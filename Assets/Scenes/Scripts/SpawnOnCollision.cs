@@ -21,11 +21,11 @@ public class SpawnOnCollision : MonoBehaviour
   {
       if(collision.collider.tag == strTag)
       {
-        if (bSpawnSelf)
-                Instantiate(goSpawn, transform.position, Quaternion.identity);
-        if(bSpawnOther)
-                Instantiate(goSpawn, collision.transform.position, Quaternion.identity);
+            if (bSpawnSelf)
+                    Instantiate(goSpawn, transform.position, Quaternion.identity);
+            if(bSpawnOther)
+                    Instantiate(goSpawn, collision.transform.position, Quaternion.identity);
         }
 
-  }
+    }
 }

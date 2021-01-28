@@ -2,21 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Shield : MonoBehaviour
 {
     [SerializeField]
     public Transform Player;
 
-    public Texture SampleTexture;
+    [SerializeField]
+    public float invulnerabilityTime;
+
+    public bool invulnerable;
+     Color standard;
+
+    private void Start()
+    {
+        standard = Player.GetComponent<Renderer>().material.GetColor("_Color");
+
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             FindObjectOfType<AudioManager>().Play("Clock");
-            Destroy(this.gameObject);
-            Player.GetComponent<Renderer>().material.SetColor("_Color", Color.cyan);
+            this.gameObject.GetComponent<Renderer>().enabled = false;
+
+
+            StartCoroutine(InvulnerabilityTime(invulnerabilityTime));
+
+            
         }
     }
 
+
+    IEnumerator InvulnerabilityTime(float time)
+    {
+        Player.GetComponent<Renderer>().material.SetColor("_Color", Color.cyan);
+        invulnerable = true;
+      
+        yield return new WaitForSeconds(time);
+
+        FindObjectOfType<AudioManager>().Play("Clock");
+        Player.GetComponent<Renderer>().material.SetColor("_Color", standard);
+        invulnerable = false;
+
+    }
 }

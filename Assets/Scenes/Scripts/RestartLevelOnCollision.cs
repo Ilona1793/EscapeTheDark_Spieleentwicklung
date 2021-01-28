@@ -25,12 +25,15 @@ public class RestartLevelOnCollision : MonoBehaviour
     bool collected;
 
     SafePoint[] _safePoint;
+    Shield shield;
 
     private void Start()
     {
         // _safePoint = FindObjectOfType<SafePoint>();
         _safePoint = FindObjectsOfType<SafePoint>();
         collected = false;
+
+        shield = FindObjectOfType<Shield>();
 
     }
 
@@ -50,12 +53,12 @@ public class RestartLevelOnCollision : MonoBehaviour
                 }
             }
                 
-                if (collected == false)
+                if (collected == false && shield.invulnerable == false)
                 {
 
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
-                /* else
+                 /*else
                  {
                      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                  }*/
