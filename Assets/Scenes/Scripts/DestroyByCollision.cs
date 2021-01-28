@@ -14,15 +14,31 @@ public class DestroyByCollision : MonoBehaviour
   [SerializeField]
   bool bDestroyOther = false;
 
-  private void OnCollisionEnter(Collision collision)
+    Shield shield;
+
+    private void Start()
+    {
+        // _safePoint = FindObjectOfType<SafePoint>();
+        shield = FindObjectOfType<Shield>();
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
   {
       if(collision.collider.tag == strTag)
       {
-        if(bDestroySelf)
+            if (shield.invulnerable == true)
+            {
+                bDestroySelf = true;
+                bDestroyOther = false;
+            }
+
+            if (bDestroySelf)
           Destroy(this.gameObject);
         if(bDestroyOther)
           Destroy(collision.gameObject);
-      }
+
+                    }
 
   }
 }
