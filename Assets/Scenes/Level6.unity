@@ -6220,6 +6220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strTag: Player
   Player: {fileID: 1363644231}
+  RespawnField: {fileID: 1624428429}
   RespawnPoints:
   - {fileID: 953649233}
   - {fileID: 2048659638}

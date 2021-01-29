@@ -27,7 +27,7 @@ public class DestroyByCollision : MonoBehaviour
   {
       if(collision.collider.tag == strTag)
       {
-            if (shield.invulnerable == true)
+            if (shield != null && shield.invulnerable == true)
             {
                 bDestroySelf = true;
                 bDestroyOther = false;

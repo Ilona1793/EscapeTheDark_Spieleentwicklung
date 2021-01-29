@@ -14,11 +14,14 @@ public class RestartLevelOnCollision : MonoBehaviour
     [SerializeField]
     public Transform Player;
 
-   /* [SerializeField]
-    public Transform RespawnPoint;*/
+    [SerializeField]
+    public GameObject RespawnField;
+
+    /* [SerializeField]
+     public Transform RespawnPoint;*/
 
     // mehrere SafePoints:
-     [SerializeField]
+    [SerializeField]
      public Transform [] RespawnPoints;
 
     int i;
@@ -52,18 +55,32 @@ public class RestartLevelOnCollision : MonoBehaviour
                     Player.transform.position = RespawnPoints[_safePoint[i].safePointNumber].transform.position;
                 }
             }
-                
-                if (collected == false && shield.invulnerable == false)
+
+            if (collected == false)
+            {
+               /* if(shield != null && shield.invulnerable == false | shield == null| this.gameObject == RespawnField) {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }*/
+                if (shield != null && shield.invulnerable == false) {
+
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
+                if (shield == null) {
+
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
+                if (this.gameObject == RespawnField)
                 {
 
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
-                 /*else
-                 {
-                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                 }*/
-            
-          
+
+            }
+
+            }
+
+
+
         }
     }
-}
+

@@ -5354,7 +5354,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strTag: Player
-  Player: {fileID: 0}
+  Player: {fileID: 1363644231}
+  RespawnField: {fileID: 1624428429}
   RespawnPoints: []
 --- !u!65 &1624428431
 BoxCollider:
