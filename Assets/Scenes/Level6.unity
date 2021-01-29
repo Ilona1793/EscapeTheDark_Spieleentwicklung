@@ -121,6 +121,66 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2145173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2145174}
+  - component: {fileID: 2145176}
+  - component: {fileID: 2145175}
+  m_Layer: 0
+  m_Name: Spawner (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2145174
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145173}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.46, y: 149.81, z: 98.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 464175321}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2145175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fTimer: 2
+--- !u!114 &2145176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 433dcd75beb8f904f806517da8f424b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goCreate: {fileID: 986449404035468506, guid: c5f92e8cf2b92294ebfc4b91fe5a45e4, type: 3}
+  fTimeIntervals: 1
+  v3SpawnPosJitter: {x: 9, y: 0, z: 7}
 --- !u!1 &7651084
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,8 +340,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObject: {fileID: 793730463}
-  timerEnemies: {fileID: 172890605}
   playerOnPlattform: 0
+  sliderEnemies: {fileID: 0}
   countdownTimeEnemies: 30
   countdownTextEnemies: {fileID: 0}
 --- !u!1001 &36181583
@@ -1641,6 +1701,7 @@ Transform:
   m_Children:
   - {fileID: 1597790563}
   - {fileID: 81210090}
+  - {fileID: 2145174}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
