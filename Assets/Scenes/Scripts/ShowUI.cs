@@ -7,16 +7,17 @@ public class ShowUI : MonoBehaviour
 {
 
     public GameObject uiObject;
-    public GameObject timerEnemies;
     public bool playerOnPlattform;
 
+    public Slider sliderEnemies;
     public int countdownTimeEnemies;
-    public TextMesh countdownTextEnemies;
+    public Text countdownTextEnemies;
 
     void Start()
     {
         uiObject.SetActive(false);
-        timerEnemies.SetActive(false);
+        sliderEnemies.gameObject.SetActive(false);
+        countdownTextEnemies.gameObject.SetActive(false);
         playerOnPlattform =  false;
     }
 
@@ -27,32 +28,34 @@ public class ShowUI : MonoBehaviour
         {
             playerOnPlattform = true;
             uiObject.SetActive(true);
-            timerEnemies.SetActive(true);
+            sliderEnemies.gameObject.SetActive(true);
             StartCoroutine("WaitForSec");
-            StartCoroutine(CountdownEnemies());
+            StartCoroutine("CountdownEnemies");
         }
     }
     IEnumerator WaitForSec()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(2);
         Destroy(uiObject);
-        
     }
 
     IEnumerator CountdownEnemies()
     {
+        sliderEnemies.maxValue = countdownTimeEnemies;
+
         while (countdownTimeEnemies > 0)
         {
-            countdownTextEnemies.text = countdownTimeEnemies.ToString();
+            sliderEnemies.value = countdownTimeEnemies;
+           
+            yield return new WaitForSeconds(0.05f);
 
-            yield return new WaitForSeconds(1f);
-
-            countdownTimeEnemies--;
+            countdownTimeEnemies -=1;
         }
 
-        countdownTextEnemies.text = "GOOD JOB!";
-
-        yield return new WaitForSeconds(1f);
-        Destroy(timerEnemies);
+        sliderEnemies.gameObject.SetActive(false);
+        yield return new WaitForSeconds(0.5f);
+        countdownTextEnemies.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        countdownTextEnemies.gameObject.SetActive(false);
     }
 }
