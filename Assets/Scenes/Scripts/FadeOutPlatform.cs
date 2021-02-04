@@ -9,7 +9,7 @@ public class FadeOutPlatform : MonoBehaviour
 
     private float fadeOutTimerDelta = 0f;
     private MeshRenderer meshRenderer;
-    private MeshCollider meshCollider;
+    public MeshCollider meshCollider;
 
     public int interpolationFramesCount = 45; // Number of frames to completely interpolate between the 2 positions
     int elapsedFrames = 0;
@@ -20,7 +20,7 @@ public class FadeOutPlatform : MonoBehaviour
     {
         meshRenderer = this.GetComponent<MeshRenderer>();
         meshCollider = this.GetComponent<MeshCollider>();
-        meshCollider.enabled = false;
+        meshCollider.enabled = true;
     }
 
     // Update is called once per frame
@@ -30,6 +30,7 @@ public class FadeOutPlatform : MonoBehaviour
         {
             isFading = true;
             fadeOutTimerDelta = 0f;
+            
 
         }
         else
@@ -49,7 +50,6 @@ public class FadeOutPlatform : MonoBehaviour
         else
         {
             FadeOutObject(1f);
-            meshCollider.enabled = true;
         }
     }
 
@@ -58,9 +58,11 @@ public class FadeOutPlatform : MonoBehaviour
         Color colorStart = meshRenderer.material.color;
         colorStart.a = alphaValue;
         meshRenderer.material.color = colorStart;
+        
         if (alphaValue <= 0f)
         {
             isFading = false;
+            meshCollider.enabled = false;
         }
     }
 }

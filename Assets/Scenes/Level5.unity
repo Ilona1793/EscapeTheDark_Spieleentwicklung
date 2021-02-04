@@ -4398,7 +4398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa3d8bd9fa847445893d48b6c7a3f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strSceneName: Finished
+  strSceneName: Level4
   endText: {fileID: 202766410}
   highscoreText: {fileID: 1824481132}
   HighScoreLevelMinutes: HighScore5 Minutes
@@ -7966,4 +7966,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeOutTimer: 5
-  interpolationFramesCount: 500
+  meshCollider: {fileID: 7838452000363970154}
+  interpolationFramesCount: 300
+--- !u!64 &7838452000363970154 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: 6488144866575836669, guid: c8f25667b43ff9743b4a5d4f74ca791a,
+    type: 3}
+  m_PrefabInstance: {fileID: 5631771020963619340}
+  m_PrefabAsset: {fileID: 0}

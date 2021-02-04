@@ -5358,12 +5358,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa3d8bd9fa847445893d48b6c7a3f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strSceneName: Level5
+  strSceneName: Finished
   endText: {fileID: 508251474}
   highscoreText: {fileID: 1260781055}
-  HighScoreLevelMinutes: HighScore4 Minutes
-  HighScoreLevelSeconds: HighScore4 Seconds
-  HighScoreLevelMilliseconds: HighScore4 Milliseconds
+  HighScoreLevelMinutes: HighScore6 Minutes
+  HighScoreLevelSeconds: HighScore6 Seconds
+  HighScoreLevelMilliseconds: HighScore6 Milliseconds
 --- !u!1001 &1365445111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5717,7 +5717,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 4
+  m_Text: Level 6
 --- !u!222 &1496052010
 CanvasRenderer:
   m_ObjectHideFlags: 0
