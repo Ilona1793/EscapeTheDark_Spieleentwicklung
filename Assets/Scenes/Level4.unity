@@ -282,7 +282,7 @@ MonoBehaviour:
   uiObject: {fileID: 793730463}
   playerOnPlattform: 0
   sliderEnemies: {fileID: 220693898}
-  countdownTimeEnemies: 650
+  countdownTimeEnemies: 750
   countdownTextEnemies: {fileID: 871286879}
 --- !u!1001 &36181583
 PrefabInstance:
@@ -5490,7 +5490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa3d8bd9fa847445893d48b6c7a3f7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strSceneName: Level5
+  strSceneName: Level6
   endText: {fileID: 508251474}
   highscoreText: {fileID: 1260781055}
   HighScoreLevelMinutes: HighScore4 Minutes

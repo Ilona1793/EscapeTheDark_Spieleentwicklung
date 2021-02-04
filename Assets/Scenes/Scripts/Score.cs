@@ -12,6 +12,7 @@ public class Score : MonoBehaviour
     public Text level3;
     public Text level4;
     public Text level5;
+    public Text level6;
 
 
     private void Start()
@@ -52,6 +53,12 @@ public class Score : MonoBehaviour
         String milliseconds5 = PlayerPrefs.GetInt("HighScore5 Milliseconds", 100).ToString();
 
         level5.text = minutes5 + ":" + seconds5 + "." + milliseconds5;
+
+        String minutes6 = PlayerPrefs.GetInt("HighScore6 Minutes", 100).ToString();
+        String seconds6 = PlayerPrefs.GetInt("HighScore6 Seconds", 100).ToString();
+        String milliseconds6 = PlayerPrefs.GetInt("HighScore6 Milliseconds", 100).ToString();
+
+        level6.text = minutes6 + ":" + seconds6 + "." + milliseconds6;
     }
 
 

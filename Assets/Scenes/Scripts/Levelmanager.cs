@@ -26,6 +26,11 @@ public class Levelmanager : MonoBehaviour
         SceneManager.LoadScene(5);
     }
 
+     public void GoToLevel6()
+    {
+        SceneManager.LoadScene(6);
+    }
+
     public void BackToMenu()
     {
         SceneManager.LoadScene("Menu");
