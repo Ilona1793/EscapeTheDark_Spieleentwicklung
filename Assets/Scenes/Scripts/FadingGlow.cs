@@ -1,0 +1,66 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class FadingGlow : MonoBehaviour
+{
+    public Material mat;
+    public Color col;
+
+    public float intensityMax = 255;
+    public float _intensity = 255;
+    public float decrease = 1;
+    public float offTimer = 3f;
+    private bool isOn = true;
+    private float t = 0f;
+    private float offTimerDelta = 0f;
+    private Material copied;
+
+    void Start()
+    {
+        copied = new Material(mat);
+        GetComponent<MeshRenderer>().material = copied;
+    }
+
+    void Update()
+    {
+        if (isOn)
+        {
+            copied.SetVector("_EmissionColor", col * _intensity);
+            _intensity = _intensity - decrease;
+            if (_intensity < 0)
+            {
+                isOn = false;
+                _intensity = intensityMax;
+            }
+        } else
+        {
+            if(offTimer < offTimerDelta)
+            {
+                isOn = true;
+                offTimerDelta = 0f;
+                copied.color = new Vector4(col.r, col.g, col.b, 1f);
+                t = 0f;
+            }
+            else
+            {
+                offTimerDelta += Time.deltaTime;
+                FadeOutAlpha();
+            }
+        }
+    }
+
+    public void FadeOutAlpha()
+    {
+        if(t > 2f)
+        {
+            return;
+        }
+        float alpha = Mathf.Lerp(1f, 0f, t);
+
+        t += 5*  Time.deltaTime;
+
+        copied.color = new Vector4(col.r, col.g, col.b, alpha);
+    }
+}

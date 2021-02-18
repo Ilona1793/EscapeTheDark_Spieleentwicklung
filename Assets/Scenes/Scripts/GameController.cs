@@ -32,6 +32,7 @@ public class GameController : MonoBehaviour
         _clock = FindObjectOfType<ClockItem>();
 
         //?
+        //!!
         _audio = FindObjectOfType<AudioManager>();
 
     }

@@ -22,23 +22,27 @@ public class RestartLevelOnCollision : MonoBehaviour
 
     // mehrere SafePoints:
     [SerializeField]
-     public Transform [] RespawnPoints;
+     public Transform[] RespawnPoints;
 
     int i;
     bool collected;
 
-    SafePoint[] _safePoint;
+    public SafePoint[] _safePoint;
     Shield shield;
 
     private void Start()
     {
         // _safePoint = FindObjectOfType<SafePoint>();
-        _safePoint = FindObjectsOfType<SafePoint>();
+        //_safePoint = FindObjectsOfType<SafePoint>();
         collected = false;
+        
+        Debug.Log("distance 1 : " + Vector3.Distance(transform.position, RespawnPoints[0].position));
+        Debug.Log("distance 2 : " + Vector3.Distance(transform.position, RespawnPoints[1].position));
 
         shield = FindObjectOfType<Shield>();
 
     }
+
 
 
     private void OnCollisionEnter(Collision collision)
@@ -46,7 +50,7 @@ public class RestartLevelOnCollision : MonoBehaviour
         if (collision.collider.tag == strTag)
         {
             FindObjectOfType<AudioManager>().Play("Fall");
-            for (i = _safePoint.Length - 1; i >= 0; --i)
+            for (i = 0; i < _safePoint.Length; i++)
             {
      
                 if (_safePoint[i] != null && _safePoint[i].respawnPlayer)

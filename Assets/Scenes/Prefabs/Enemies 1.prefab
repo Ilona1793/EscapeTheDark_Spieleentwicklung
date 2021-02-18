@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fTimer: 15
+  fTimer: 13
 --- !u!114 &1308222416117428189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,6 +173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strTag: Player
+  Player: {fileID: 0}
+  RespawnField: {fileID: 0}
+  RespawnPoints: []
 --- !u!114 &9069907133306282116
 MonoBehaviour:
   m_ObjectHideFlags: 0
