@@ -66,11 +66,11 @@ public class RestartLevelOnCollision : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }*/
                 if (shield != null && shield.invulnerable == false) {
-
+                    Debug.Log("Shield Invulnerable : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
                 if (shield == null) {
-
+                    Debug.Log("No Shield : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
                 if (this.gameObject == RespawnField)
