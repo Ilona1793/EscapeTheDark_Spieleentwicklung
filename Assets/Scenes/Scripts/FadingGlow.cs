@@ -17,10 +17,15 @@ public class FadingGlow : MonoBehaviour
     private float offTimerDelta = 0f;
     private Material copied;
 
+    public MeshCollider meshCollider;
+
     void Start()
     {
         copied = new Material(mat);
         GetComponent<MeshRenderer>().material = copied;
+
+        meshCollider = this.GetComponent<MeshCollider>();
+        meshCollider.enabled = false;
     }
 
     void Update()
@@ -42,6 +47,7 @@ public class FadingGlow : MonoBehaviour
                 offTimerDelta = 0f;
                 copied.color = new Vector4(col.r, col.g, col.b, 1f);
                 t = 0f;
+                meshCollider.enabled = true;
             }
             else
             {
@@ -62,5 +68,6 @@ public class FadingGlow : MonoBehaviour
         t += 5*  Time.deltaTime;
 
         copied.color = new Vector4(col.r, col.g, col.b, alpha);
+        
     }
 }
