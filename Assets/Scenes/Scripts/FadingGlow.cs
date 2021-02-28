@@ -25,7 +25,7 @@ public class FadingGlow : MonoBehaviour
         GetComponent<MeshRenderer>().material = copied;
 
         meshCollider = this.GetComponent<MeshCollider>();
-        meshCollider.enabled = false;
+        meshCollider.enabled = true;
     }
 
     void Update()
@@ -38,6 +38,7 @@ public class FadingGlow : MonoBehaviour
             {
                 isOn = false;
                 _intensity = intensityMax;
+                
             }
         } else
         {
@@ -47,13 +48,15 @@ public class FadingGlow : MonoBehaviour
                 offTimerDelta = 0f;
                 copied.color = new Vector4(col.r, col.g, col.b, 1f);
                 t = 0f;
-                meshCollider.enabled = true;
+                
             }
             else
             {
                 offTimerDelta += Time.deltaTime;
                 FadeOutAlpha();
+                
             }
+            meshCollider.enabled = true;
         }
     }
 
@@ -68,6 +71,8 @@ public class FadingGlow : MonoBehaviour
         t += 5*  Time.deltaTime;
 
         copied.color = new Vector4(col.r, col.g, col.b, alpha);
+
+        meshCollider.enabled = false;
         
     }
 }
