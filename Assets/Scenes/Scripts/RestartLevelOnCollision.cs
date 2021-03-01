@@ -36,8 +36,8 @@ public class RestartLevelOnCollision : MonoBehaviour
         //_safePoint = FindObjectsOfType<SafePoint>();
         collected = false;
         
-        Debug.Log("distance 1 : " + Vector3.Distance(transform.position, RespawnPoints[0].position));
-        Debug.Log("distance 2 : " + Vector3.Distance(transform.position, RespawnPoints[1].position));
+       // Debug.Log("distance 1 : " + Vector3.Distance(transform.position, RespawnPoints[0].position));
+       // Debug.Log("distance 2 : " + Vector3.Distance(transform.position, RespawnPoints[1].position));
 
         shield = FindObjectOfType<Shield>();
 
@@ -66,16 +66,16 @@ public class RestartLevelOnCollision : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }*/
                 if (shield != null && shield.invulnerable == false) {
-                    Debug.Log("Shield Invulnerable : " + shield.invulnerable);
+                   // Debug.Log("Shield Invulnerable : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
                 if (shield == null) {
-                    Debug.Log("No Shield : " + shield.invulnerable);
+                   // Debug.Log("No Shield : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
                 if (this.gameObject == RespawnField)
                 {
-
+                    Debug.Log("Normal");
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
 
