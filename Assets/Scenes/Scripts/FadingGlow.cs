@@ -11,12 +11,11 @@ public class FadingGlow : MonoBehaviour
     public float intensityMax = 255;
     public float _intensity = 255;
     public float decrease = 1;
-    public float offTimer = 3f;
+    public float offTimer;
     private bool isOn = true;
     private float t = 0f;
     private float offTimerDelta = 0f;
     private Material copied;
-
     public MeshCollider meshCollider;
 
     void Start()
@@ -25,13 +24,14 @@ public class FadingGlow : MonoBehaviour
         GetComponent<MeshRenderer>().material = copied;
 
         meshCollider = this.GetComponent<MeshCollider>();
-        meshCollider.enabled = true;
+        meshCollider.enabled = false;
     }
 
     void Update()
     {
         if (isOn)
         {
+            meshCollider.enabled = true;
             copied.SetVector("_EmissionColor", col * _intensity);
             _intensity = _intensity - decrease;
             if (_intensity < 0)
@@ -49,14 +49,18 @@ public class FadingGlow : MonoBehaviour
                 copied.color = new Vector4(col.r, col.g, col.b, 1f);
                 t = 0f;
                 
+
             }
             else
             {
+                Debug.Log("Off:"+ offTimer);
+                Debug.Log("Off-Delta:" + offTimerDelta);
                 offTimerDelta += Time.deltaTime;
                 FadeOutAlpha();
-                
+              
             }
-            meshCollider.enabled = true;
+           
+            
         }
     }
 
@@ -68,7 +72,7 @@ public class FadingGlow : MonoBehaviour
         }
         float alpha = Mathf.Lerp(1f, 0f, t);
 
-        t += 5*  Time.deltaTime;
+        t += 1*  Time.deltaTime;
 
         copied.color = new Vector4(col.r, col.g, col.b, alpha);
 
