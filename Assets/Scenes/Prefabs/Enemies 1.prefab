@@ -174,8 +174,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strTag: Player
   Player: {fileID: 0}
-  RespawnField: {fileID: 0}
-  RespawnPoints: []
+  RespawnField: {fileID: 986449404035468506}
+  RespawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  _safePoint: []
 --- !u!114 &9069907133306282116
 MonoBehaviour:
   m_ObjectHideFlags: 0

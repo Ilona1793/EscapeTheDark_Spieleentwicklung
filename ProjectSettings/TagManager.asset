@@ -11,6 +11,8 @@ TagManager:
   - FadeOut
   - DestroyObject
   - FadeOutGlow
+  - EndEnemy
+  - RespawnField
   layers:
   - Default
   - TransparentFX

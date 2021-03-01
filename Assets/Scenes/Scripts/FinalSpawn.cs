@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn : MonoBehaviour
+public class FinalSpawn : MonoBehaviour
 {
     [SerializeField]
     GameObject goCreate;
@@ -12,10 +12,10 @@ public class Spawn : MonoBehaviour
 
     [SerializeField]
     Vector3 v3SpawnPosJitter;
-    
+
 
     float fTimer = 0;
-    ShowUI _plattform; //neu
+
     FinalEnemy _finalEnemy;
 
 
@@ -23,26 +23,13 @@ public class Spawn : MonoBehaviour
     void Start()
     {
         fTimer = fTimeIntervals;
-        _plattform = FindObjectOfType<ShowUI>();//neu
         _finalEnemy = FindObjectOfType<FinalEnemy>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //neu
-        if (_plattform.playerOnPlattform)
-        {
-            fTimer -= Time.deltaTime;
-            if (fTimer <= 0)
-            {
-                fTimer = fTimeIntervals;
-                Vector3 v3SpawnPos = transform.position;
-                
 
-                Instantiate(goCreate, transform.position, Quaternion.identity);
-            }
-        }
 
         if (_finalEnemy.playerOnEndPlatform)
         {
@@ -60,3 +47,4 @@ public class Spawn : MonoBehaviour
 
     }
 }
+

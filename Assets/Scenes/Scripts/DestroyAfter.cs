@@ -7,10 +7,13 @@ public class DestroyAfter : MonoBehaviour
     [SerializeField]
     float fTimer;
     ShowUI _plattform;
+    FinalEnemy _finalEnemy;
+
     // Start is called before the first frame update
     void Start()
     {
         _plattform = FindObjectOfType<ShowUI>();
+        _finalEnemy = FindObjectOfType<FinalEnemy>();
     }
 
     // Update is called once per frame
@@ -24,5 +27,15 @@ public class DestroyAfter : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
+
+        if (_finalEnemy.playerOnEndPlatform)
+        {
+            fTimer -= Time.deltaTime;
+            if (fTimer <= 0)
+            {
+                Destroy(this.gameObject);
+            }
+        }
+
     }
 }

@@ -73,7 +73,7 @@ public class RestartLevelOnCollision : MonoBehaviour
                    // Debug.Log("No Shield : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
-                if (this.gameObject == RespawnField)
+                if (this.gameObject.tag == "RespawnField")
                 {
                     Debug.Log("Normal");
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);

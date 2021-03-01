@@ -5336,7 +5336,7 @@ GameObject:
   - component: {fileID: 1624428430}
   m_Layer: 0
   m_Name: RespawnField
-  m_TagString: Untagged
+  m_TagString: RespawnField
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5357,6 +5357,7 @@ MonoBehaviour:
   Player: {fileID: 1363644231}
   RespawnField: {fileID: 1624428429}
   RespawnPoints: []
+  _safePoint: []
 --- !u!65 &1624428431
 BoxCollider:
   m_ObjectHideFlags: 0
