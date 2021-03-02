@@ -5,14 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class DestroyByCollision : MonoBehaviour
 {
-  [SerializeField]
-  string strTag;
+    [SerializeField]
+    string strTag;
 
-  [SerializeField]
-  bool bDestroySelf = false;
+    [SerializeField]
+    bool bDestroySelf = false;
 
-  [SerializeField]
-  bool bDestroyOther = false;
+    [SerializeField]
+    bool bDestroyOther = false;
+
+    public int life = 1;
 
     Shield shield;
 
@@ -24,21 +26,26 @@ public class DestroyByCollision : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-  {
-      if(collision.collider.tag == strTag)
-      {
+    {
+        if (collision.collider.tag == strTag)
+        {
             if (shield != null && shield.invulnerable == true)
             {
-                bDestroySelf = true;
+                //bDestroySelf = true;
                 bDestroyOther = false;
+                life--;
+
             }
 
-            if (bDestroySelf)
-          Destroy(this.gameObject);
-        if(bDestroyOther)
-          Destroy(collision.gameObject);
+            if (life <= 0)
+            {
+                Destroy(this.gameObject);
+            }
 
-                    }
+            if (bDestroyOther)
+                Destroy(collision.gameObject);
 
-  }
+        }
+
+    }
 }

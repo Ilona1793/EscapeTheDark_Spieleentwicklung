@@ -22,7 +22,7 @@ public class RestartLevelOnCollision : MonoBehaviour
 
     // mehrere SafePoints:
     [SerializeField]
-     public Transform[] RespawnPoints;
+    public Transform[] RespawnPoints;
 
     int i;
     bool collected;
@@ -35,9 +35,9 @@ public class RestartLevelOnCollision : MonoBehaviour
         // _safePoint = FindObjectOfType<SafePoint>();
         //_safePoint = FindObjectsOfType<SafePoint>();
         collected = false;
-        
-       // Debug.Log("distance 1 : " + Vector3.Distance(transform.position, RespawnPoints[0].position));
-       // Debug.Log("distance 2 : " + Vector3.Distance(transform.position, RespawnPoints[1].position));
+
+        // Debug.Log("distance 1 : " + Vector3.Distance(transform.position, RespawnPoints[0].position));
+        // Debug.Log("distance 2 : " + Vector3.Distance(transform.position, RespawnPoints[1].position));
 
         shield = FindObjectOfType<Shield>();
 
@@ -52,7 +52,7 @@ public class RestartLevelOnCollision : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Fall");
             for (i = 0; i < _safePoint.Length; i++)
             {
-     
+
                 if (_safePoint[i] != null && _safePoint[i].respawnPlayer)
                 {
                     collected = true;
@@ -62,15 +62,17 @@ public class RestartLevelOnCollision : MonoBehaviour
 
             if (collected == false)
             {
-               /* if(shield != null && shield.invulnerable == false | shield == null| this.gameObject == RespawnField) {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }*/
-                if (shield != null && shield.invulnerable == false) {
-                   // Debug.Log("Shield Invulnerable : " + shield.invulnerable);
+                /* if(shield != null && shield.invulnerable == false | shield == null| this.gameObject == RespawnField) {
+                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                 }*/
+                if (shield != null && shield.invulnerable == false)
+                {
+                    // Debug.Log("Shield Invulnerable : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
-                if (shield == null) {
-                   // Debug.Log("No Shield : " + shield.invulnerable);
+                if (shield == null)
+                {
+                    // Debug.Log("No Shield : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
                 if (this.gameObject.tag == "RespawnField")
@@ -81,10 +83,10 @@ public class RestartLevelOnCollision : MonoBehaviour
 
             }
 
-            }
-
-
-
         }
+
+
+
     }
+}
 

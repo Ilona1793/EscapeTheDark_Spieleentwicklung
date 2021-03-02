@@ -15,6 +15,7 @@ public class ClockItem : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Clock");
             Destroy(this.gameObject);
             timeBonus = true;
+            
         }
           
     }
