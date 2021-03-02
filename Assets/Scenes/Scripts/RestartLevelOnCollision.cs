@@ -29,6 +29,7 @@ public class RestartLevelOnCollision : MonoBehaviour
 
     public SafePoint[] _safePoint;
     Shield shield;
+    //public Shield[] _shield;
 
     private void Start()
     {

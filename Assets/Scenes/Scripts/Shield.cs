@@ -14,8 +14,6 @@ public class Shield : MonoBehaviour
     public bool invulnerable;
      Color standard;
 
-    [SerializeField]
-    public int shieldNumber;
 
     private void Start()
     {
