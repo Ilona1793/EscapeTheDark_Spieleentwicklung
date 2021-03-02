@@ -264,7 +264,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58427346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 2b0e9cbdfb8b9404689b804f670bc8ce, type: 2}
   m_CullingMode: 0
@@ -275,6 +275,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &58427348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58427346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e29a205d93e64ead38e74db0bf295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
+  col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
+  startDelay: 3
+  timeToFade: 1
+  intensityMax: 255
+  _intensity: 255
+  decrease: 1
+  offTimer: 3
+  meshCollider: {fileID: 58427349}
+--- !u!64 &58427349 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: -3311869370405849459, guid: 1d9271476a2681a419c0f1ccf6acf2ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 2134167668}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &61510143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1040621071328476849, guid: cefe8f0b76a26a34094e136240fef858,
@@ -1059,7 +1086,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315799989}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 009ad36fb70465043a176b441434cd1e, type: 2}
   m_CullingMode: 0
@@ -1070,6 +1097,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &315799991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315799989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e29a205d93e64ead38e74db0bf295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
+  col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
+  startDelay: 1
+  timeToFade: 1
+  intensityMax: 255
+  _intensity: 255
+  decrease: 1
+  offTimer: 3
+  meshCollider: {fileID: 315799992}
+--- !u!64 &315799992 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: -3311869370405849459, guid: 1d9271476a2681a419c0f1ccf6acf2ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 315799987}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &408837364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1923,6 +1977,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 288623273}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &780361711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780361710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e29a205d93e64ead38e74db0bf295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
+  col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
+  startDelay: 3
+  timeToFade: 1
+  intensityMax: 255
+  _intensity: 255
+  decrease: 1
+  offTimer: 3
+  meshCollider: {fileID: 0}
 --- !u!95 &780361714
 Animator:
   serializedVersion: 3
@@ -1931,7 +2006,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780361710}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: da2f2776339c3e943984c346978907b9, type: 2}
   m_CullingMode: 0
@@ -2367,7 +2442,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916314078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: c9efccd182bafcc498289d1468b7218d, type: 2}
   m_CullingMode: 0
@@ -2378,6 +2453,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &916314080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916314078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e29a205d93e64ead38e74db0bf295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
+  col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
+  startDelay: 3
+  timeToFade: 1
+  intensityMax: 255
+  _intensity: 255
+  decrease: 1
+  offTimer: 3
+  meshCollider: {fileID: 916314081}
+--- !u!64 &916314081 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: -3311869370405849459, guid: 1d9271476a2681a419c0f1ccf6acf2ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 408837364}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930454686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4492,6 +4594,7 @@ MonoBehaviour:
   strTag: Enemy
   bDestroySelf: 0
   bDestroyOther: 1
+  life: 1
 --- !u!4 &1651857393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4562a285891248648ac5b947e198fe7e,
@@ -5741,6 +5844,33 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1741213380}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2078210598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078210597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e29a205d93e64ead38e74db0bf295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
+  col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
+  startDelay: 1
+  timeToFade: 1
+  intensityMax: 255
+  _intensity: 255
+  decrease: 1
+  offTimer: 3
+  meshCollider: {fileID: 2078210599}
+--- !u!64 &2078210599 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: -3311869370405849459, guid: 1d9271476a2681a419c0f1ccf6acf2ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1741213380}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2078210601
 Animator:
   serializedVersion: 3
@@ -5749,7 +5879,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2078210597}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 698dff6af5d760a4abc8752c06ec28d8, type: 2}
   m_CullingMode: 0
@@ -6607,7 +6737,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6641326025020359546}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9c807120427e3814b977f99cf05490db, type: 2}
   m_CullingMode: 0
@@ -6618,6 +6748,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6641326025020359548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6641326025020359546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b73e29a205d93e64ead38e74db0bf295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
+  col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
+  startDelay: 1
+  timeToFade: 1
+  intensityMax: 255
+  _intensity: 255
+  decrease: 1
+  offTimer: 3
+  meshCollider: {fileID: 6641326025020359549}
+--- !u!64 &6641326025020359549 stripped
+MeshCollider:
+  m_CorrespondingSourceObject: {fileID: -3311869370405849459, guid: 1d9271476a2681a419c0f1ccf6acf2ae,
+    type: 3}
+  m_PrefabInstance: {fileID: 6641326025020359545}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6744367647480591591
 PrefabInstance:
   m_ObjectHideFlags: 0
