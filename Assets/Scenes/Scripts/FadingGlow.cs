@@ -51,7 +51,12 @@ public class FadingGlow : MonoBehaviour
 			{
 				if (offTimer < offTimerDelta)
 				{
-					StartCoroutine(FadingTime(timeToFade));
+					isOn = true;
+					offTimerDelta = 0f;
+					copied.color = new Vector4(col.r, col.g, col.b, 1f);
+					t = 0f;
+					//StartCoroutine(FadingTime(timeToFade));
+					
 
 
 				}
@@ -94,11 +99,20 @@ public class FadingGlow : MonoBehaviour
 
 	IEnumerator FadingTime(float time)
 	{
+		
+		copied.SetVector("_EmissionColor", col * _intensity);
+		_intensity = _intensity - decrease;
+		if (_intensity < 0)
+		{
+			 isOn = false;
+			_intensity = intensityMax;
 
+		}
+		
 		yield return new WaitForSeconds(time);
-
-		isOn = true;
-		offTimerDelta = 0f;
+		
+		meshCollider.enabled = true;
+        offTimerDelta = 0f;
 		copied.color = new Vector4(col.r, col.g, col.b, 1f);
 		t = 0f;
 
