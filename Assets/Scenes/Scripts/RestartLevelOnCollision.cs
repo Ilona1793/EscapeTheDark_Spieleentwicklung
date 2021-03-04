@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class RestartLevelOnCollision : MonoBehaviour
 {
     [SerializeField]
@@ -25,11 +24,18 @@ public class RestartLevelOnCollision : MonoBehaviour
     public Transform[] RespawnPoints;
 
     int i;
+    int number;
     bool collected;
 
     public SafePoint[] _safePoint;
-    Shield shield;
-    //public Shield[] _shield;
+<<<<<<< HEAD
+    //Shield shield;
+=======
+   // Shield shield;
+
+
+>>>>>>> 41c4a776f330344ad2e0aad5fb25135e0f074d8f
+    public Shield[] _shield;
 
     private void Start()
     {
@@ -40,7 +46,7 @@ public class RestartLevelOnCollision : MonoBehaviour
         // Debug.Log("distance 1 : " + Vector3.Distance(transform.position, RespawnPoints[0].position));
         // Debug.Log("distance 2 : " + Vector3.Distance(transform.position, RespawnPoints[1].position));
 
-        shield = FindObjectOfType<Shield>();
+        //shield = FindObjectOfType<Shield>();
 
     }
 
@@ -61,27 +67,45 @@ public class RestartLevelOnCollision : MonoBehaviour
                 }
             }
 
+
             if (collected == false)
             {
-                /* if(shield != null && shield.invulnerable == false | shield == null| this.gameObject == RespawnField) {
-                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                 }*/
-                if (shield != null && shield.invulnerable == false)
+                /*   
+                  if (_shield!= null && _shield.invulnerable == false)
                 {
                     // Debug.Log("Shield Invulnerable : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
-                if (shield == null)
+                
+               
+
+               
+                for (number = 0; number < _shield.Length; i++)
+                {
+                    //Fall1: Schilder im Spiel aber keines aktiv-> Neustart
+                    if (_shield[number] != null && _shield[number].invulnerable == false)
+                    {
+                        // Debug.Log("Shield Invulnerable : " + shield.invulnerable);
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                    }
+                }  */
+
+                /*
+                //Fall2: Keine Schilder da-> Neustart
+                if (_shield == null)
                 {
                     // Debug.Log("No Shield : " + shield.invulnerable);
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                 }
+
                 if (this.gameObject.tag == "RespawnField")
                 {
                     Debug.Log("Normal");
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                }
+                }*/
 
+
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
 
         }

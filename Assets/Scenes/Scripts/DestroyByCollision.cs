@@ -15,13 +15,17 @@ public class DestroyByCollision : MonoBehaviour
     bool bDestroyOther = false;
 
     public int life;
+    int number;
 
-    Shield shield;
+    //Shield shield;
+    public Shield[] _shield;
+
 
     private void Start()
     {
         // _safePoint = FindObjectOfType<SafePoint>();
-        shield = FindObjectOfType<Shield>();
+        // shield = FindObjectOfType<Shield>();
+
 
     }
 
@@ -29,12 +33,15 @@ public class DestroyByCollision : MonoBehaviour
     {
         if (collision.collider.tag == strTag)
         {
-            if (shield != null && shield.invulnerable == true)
+            for (number = 0; number < _shield.Length; number++)
             {
-                //bDestroySelf = true;
-                bDestroyOther = false;
+                if (_shield[number] != null && _shield[number].invulnerable == true)
+                {
+                    //bDestroySelf = true;
+                    bDestroyOther = false;
 
 
+                }
             }
 
             if (life <= 0)
@@ -42,10 +49,10 @@ public class DestroyByCollision : MonoBehaviour
                 Destroy(this.gameObject);
             }
 
-            if (bDestroyOther)
-            { 
-            Destroy(collision.gameObject);
-            }
+            /*if (bDestroyOther)
+            {
+               Destroy(collision.gameObject);
+            }*/
 
             life = life - 1;
             Debug.Log("LIFE:" + life);
