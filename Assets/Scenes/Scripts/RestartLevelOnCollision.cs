@@ -28,8 +28,10 @@ public class RestartLevelOnCollision : MonoBehaviour
     bool collected;
 
     public SafePoint[] _safePoint;
-    Shield shield;
-    //public Shield[] _shield;
+   // Shield shield;
+
+
+    public Shield[] _shield;
 
     private void Start()
     {
