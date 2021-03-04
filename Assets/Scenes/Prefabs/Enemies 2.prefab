@@ -160,11 +160,7 @@ MonoBehaviour:
   strTag: Player
   bDestroySelf: 0
   bDestroyOther: 1
-  life: 9
-<<<<<<< HEAD
-  _shield: []
-=======
->>>>>>> 41c4a776f330344ad2e0aad5fb25135e0f074d8f
+  life: 3
 --- !u!114 &6823479448802830920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986449404035468506}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a17f2ec3d4e8feb4bb138bed816172b3, type: 3}
   m_Name: 
@@ -182,7 +178,6 @@ MonoBehaviour:
   RespawnField: {fileID: 0}
   RespawnPoints: []
   _safePoint: []
-  _shield: []
 --- !u!114 &9069907133306282116
 MonoBehaviour:
   m_ObjectHideFlags: 0

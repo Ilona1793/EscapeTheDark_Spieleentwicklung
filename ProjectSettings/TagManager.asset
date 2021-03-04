@@ -13,7 +13,6 @@ TagManager:
   - FadeOutGlow
   - EndEnemy
   - RespawnField
-  - Shield
   layers:
   - Default
   - TransparentFX
