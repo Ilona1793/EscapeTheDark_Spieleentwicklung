@@ -160,7 +160,7 @@ MonoBehaviour:
   strTag: Player
   bDestroySelf: 0
   bDestroyOther: 1
-  life: 9
+  life: 3
 --- !u!114 &6823479448802830920
 MonoBehaviour:
   m_ObjectHideFlags: 0

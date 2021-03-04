@@ -4130,7 +4130,7 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 1}
   startDelay: 1
-  timeToFade: 1
+  timeToFade: 4
   intensityMax: 255
   _intensity: 255
   decrease: 1
