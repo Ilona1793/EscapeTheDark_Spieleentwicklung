@@ -17,11 +17,14 @@ public class DestroyByCollision : MonoBehaviour
     public int life;
 
     Shield shield;
+    
+    
+    //public Shield[] _shield;
 
     private void Start()
     {
         // _safePoint = FindObjectOfType<SafePoint>();
-        shield = FindObjectOfType<Shield>();
+       // shield = FindObjectOfType<Shield>();
 
     }
 
@@ -44,7 +47,7 @@ public class DestroyByCollision : MonoBehaviour
 
             if (bDestroyOther)
             { 
-            Destroy(collision.gameObject);
+            //Destroy(collision.gameObject);
             }
 
             life = life - 1;

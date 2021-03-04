@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 8781229183340526492}
   - component: {fileID: -2866000541726131934}
   - component: {fileID: 1308222416117428189}
-  - component: {fileID: 6823479448802830920}
   - component: {fileID: 9069907133306282116}
   m_Layer: 0
   m_Name: Enemies 2
@@ -161,23 +160,6 @@ MonoBehaviour:
   bDestroySelf: 0
   bDestroyOther: 1
   life: 3
---- !u!114 &6823479448802830920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986449404035468506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a17f2ec3d4e8feb4bb138bed816172b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  strTag: Player
-  Player: {fileID: 0}
-  RespawnField: {fileID: 0}
-  RespawnPoints: []
-  _safePoint: []
 --- !u!114 &9069907133306282116
 MonoBehaviour:
   m_ObjectHideFlags: 0
