@@ -14,7 +14,7 @@ public class DestroyByCollision : MonoBehaviour
     [SerializeField]
     bool bDestroyOther = false;
 
-    public int life = 1;
+    public int life;
 
     Shield shield;
 
@@ -33,7 +33,7 @@ public class DestroyByCollision : MonoBehaviour
             {
                 //bDestroySelf = true;
                 bDestroyOther = false;
-                life--;
+
 
             }
 
@@ -43,8 +43,13 @@ public class DestroyByCollision : MonoBehaviour
             }
 
             if (bDestroyOther)
-                Destroy(collision.gameObject);
+            { 
+            Destroy(collision.gameObject);
+            }
 
+            life = life - 1;
+            Debug.Log("LIFE:" + life);
+           
         }
 
     }

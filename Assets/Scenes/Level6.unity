@@ -130,7 +130,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2145174}
-  - component: {fileID: 2145176}
   - component: {fileID: 2145175}
   - component: {fileID: 2145177}
   m_Layer: 0
@@ -166,22 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fTimer: 100
---- !u!114 &2145176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2145173}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 433dcd75beb8f904f806517da8f424b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  goCreate: {fileID: 986449404035468506, guid: c5f92e8cf2b92294ebfc4b91fe5a45e4, type: 3}
-  fTimeIntervals: 20
-  v3SpawnPosJitter: {x: 9, y: 0, z: 7}
+  fTimer: 300
 --- !u!114 &2145177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -195,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goCreate: {fileID: 986449404035468506, guid: c5f92e8cf2b92294ebfc4b91fe5a45e4, type: 3}
-  fTimeIntervals: 3
+  fTimeIntervals: 5
   v3SpawnPosJitter: {x: 9, y: 0, z: 7}
 --- !u!1001 &14470620
 PrefabInstance:
@@ -10243,6 +10227,7 @@ Transform:
   - {fileID: 1695803702}
   - {fileID: 637387588}
   - {fileID: 1276467214}
+  - {fileID: 5006512736077638283}
   - {fileID: 620576475}
   - {fileID: 623741808}
   - {fileID: 1728352636}
@@ -10262,9 +10247,8 @@ Transform:
   - {fileID: 25200449}
   - {fileID: 767915537}
   - {fileID: 1257022795}
-  - {fileID: 5006512736077638283}
-  - {fileID: 392167230}
   - {fileID: 5006512736055646943}
+  - {fileID: 392167230}
   - {fileID: 1874138285}
   - {fileID: 1541781334}
   - {fileID: 58071098}
@@ -10276,9 +10260,9 @@ Transform:
   - {fileID: 1233954450}
   - {fileID: 1917784575}
   - {fileID: 1654327100}
-  - {fileID: 2046024701}
   - {fileID: 1918540889}
   - {fileID: 683992630}
+  - {fileID: 2046024701}
   - {fileID: 1051830560}
   - {fileID: 337097059}
   - {fileID: 396558147}
@@ -12583,7 +12567,7 @@ Transform:
   - {fileID: 7347813735445219145}
   - {fileID: 91545258}
   m_Father: {fileID: 1980010708}
-  m_RootOrder: 29
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: -121.43101, z: 0}
 --- !u!4 &5006512736077638283
 Transform:
@@ -12612,7 +12596,7 @@ Transform:
   - {fileID: 7347813735454635805}
   - {fileID: 386137279}
   m_Father: {fileID: 1980010708}
-  m_RootOrder: 27
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -60.989002, z: 0}
 --- !u!4 &5007633975670193372 stripped
 Transform:
