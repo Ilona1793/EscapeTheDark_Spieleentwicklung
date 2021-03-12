@@ -7142,12 +7142,11 @@ MonoBehaviour:
   RespawnPoints:
   - {fileID: 953649233}
   - {fileID: 2048659638}
+  activeShield: 0
   _safePoint:
   - {fileID: 1898245802}
   - {fileID: 564920225}
-  _shield:
-  - {fileID: 1212370061}
-  - {fileID: 786481010}
+  _shield: []
 --- !u!114 &1363644234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10117,7 +10116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   safePointNumber: 0
-  respawnPlayer: 0
+  respawnPlayer: 1
 --- !u!64 &1898245803
 MeshCollider:
   m_ObjectHideFlags: 0

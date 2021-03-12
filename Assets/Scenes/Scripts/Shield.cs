@@ -12,10 +12,13 @@ public class Shield : MonoBehaviour
     public bool invulnerable;
     Color standard;
 
+    RestartLevelByEnemy enemyCollision;
+
 
     private void Start()
     {
         standard = this.gameObject.GetComponent<Renderer>().material.GetColor("_Color");
+        enemyCollision = FindObjectOfType<RestartLevelByEnemy>();
 
     }
 
@@ -48,6 +51,9 @@ public class Shield : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Clock");
         this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", standard);
         invulnerable = false;
+        //Für Collision ist Shield auch wieder deaktiviert
+        enemyCollision.activeShield = false;
+
 
     }
     /* [SerializeField]

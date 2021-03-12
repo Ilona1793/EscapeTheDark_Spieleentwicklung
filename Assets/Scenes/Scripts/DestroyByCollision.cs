@@ -18,15 +18,6 @@ public class DestroyByCollision : MonoBehaviour
 
     Shield shield;
     
-    
-    //public Shield[] _shield;
-
-    private void Start()
-    {
-        // _safePoint = FindObjectOfType<SafePoint>();
-       // shield = FindObjectOfType<Shield>();
-
-    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -35,7 +26,7 @@ public class DestroyByCollision : MonoBehaviour
             if (shield != null && shield.invulnerable == true)
             {
                 //bDestroySelf = true;
-                bDestroyOther = false;
+                bDestroyOther = false; //Player soll nicht zerstört werden
 
 
             }
@@ -45,10 +36,10 @@ public class DestroyByCollision : MonoBehaviour
                 Destroy(this.gameObject);
             }
 
-            if (bDestroyOther)
+            /*if (bDestroyOther)
             { 
             //Destroy(collision.gameObject);
-            }
+            }*/
 
             life = life - 1;
             Debug.Log("LIFE:" + life);
