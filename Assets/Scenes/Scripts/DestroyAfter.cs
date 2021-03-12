@@ -19,7 +19,7 @@ public class DestroyAfter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_plattform.playerOnPlattform | _finalEnemy.playerOnEndPlatform)
+        if (_plattform.playerOnPlattform)
         {
             fTimer -= Time.deltaTime;
             if (fTimer <= 0)
@@ -28,15 +28,16 @@ public class DestroyAfter : MonoBehaviour
             }
         }
 
-    }
-}
-
-
-/* if (_finalEnemy.playerOnEndPlatform)
+        if (_finalEnemy.playerOnEndPlatform)
         {
             fTimer -= Time.deltaTime;
             if (fTimer <= 0)
             {
                 Destroy(this.gameObject);
             }
-        }*/
+
+        }
+    }
+}
+
+
