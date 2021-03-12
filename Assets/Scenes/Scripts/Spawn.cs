@@ -44,7 +44,7 @@ public class Spawn : MonoBehaviour
             }
         }
 
-        if (_finalEnemy.playerOnEndPlatform)
+       /* if (_finalEnemy.playerOnEndPlatform)
         {
             fTimer -= Time.deltaTime;
             if (fTimer <= 0)
@@ -55,7 +55,7 @@ public class Spawn : MonoBehaviour
 
                 Instantiate(goCreate, transform.position, Quaternion.identity);
             }
-        }
+        }*/
 
 
     }

@@ -13,23 +13,23 @@ public class RestartLevelOnCollision : MonoBehaviour
     [SerializeField]
     public Transform Player;
 
-    [SerializeField]
-    public GameObject RespawnField;
+    /*[SerializeField]
+   public GameObject RespawnField;
 
-    /* [SerializeField]
-     public Transform RespawnPoint;*/
+   [SerializeField]
+    public Transform RespawnPoint;*/
 
     // mehrere SafePoints:
     [SerializeField]
     public Transform[] RespawnPoints;
 
     int i;
-    int number;
+    //int number;
     bool collected;
 
     public SafePoint[] _safePoint;
     //Shield shield;
-    public Shield[] _shield;
+    //public Shield[] _shield;
 
     private void Start()
     {

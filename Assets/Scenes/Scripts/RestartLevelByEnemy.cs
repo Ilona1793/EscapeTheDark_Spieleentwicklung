@@ -24,32 +24,25 @@ public class RestartLevelByEnemy : MonoBehaviour
     {
         collected = false;
         activeShield = false;
-
        _shield = FindObjectsOfType<Shield>();
     }
-
-
 
 
     private void OnCollisionEnter(Collision collision)
     {
 
-
+        //Sobald ein Schild eingesammelt wird, ist Variable activeShield true
         for (number = 0; number < _shield.Length; number++)
         {
-            Debug.Log("Number:" + number);
-            Debug.Log("InvulnurableShield:" + _shield[number].invulnerable);
             if (_shield[number].invulnerable == true)
             {
-                Debug.Log("Invulnerable:" + number);
                 activeShield = true;
             }
         }
 
+        //Bei Kollision wird geprüft, ob Fahne gesammelt wurde und Player dorthin zurückgesetzt, wenn kein Schild eingesammelt wurde
         if (collision.collider.tag == "Enemy")
         {
-
-            Debug.Log("Enemy-Collision");
             FindObjectOfType<AudioManager>().Play("Fall");
 
             for (i = 0; i < _safePoint.Length; i++)
@@ -57,8 +50,6 @@ public class RestartLevelByEnemy : MonoBehaviour
 
                 if (_safePoint[i] != null && _safePoint[i].respawnPlayer)
                 {
-                    Debug.Log("SAFEPOINT");
-                    Debug.Log(this.gameObject);
                     collected = true;
 
                     if (activeShield == false)
@@ -68,7 +59,7 @@ public class RestartLevelByEnemy : MonoBehaviour
                 }
             }
 
-            //Wenn keine Fahne eingesammelt wird
+            //Wenn keine Fahne und kein Schild eingesammelt wird, wird der Player an den Anfang zurückgestzt
             if (collected == false)
             {
                 if (activeShield == false)

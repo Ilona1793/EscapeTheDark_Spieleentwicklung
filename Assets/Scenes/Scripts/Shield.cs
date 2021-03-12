@@ -30,12 +30,7 @@ public class Shield : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("Clock");
                 //other.GetComponent<Renderer>().enabled = false;
                 Destroy(other.gameObject);
-
-
                 StartCoroutine(InvulnerabilityTime(invulnerabilityTime));
-
-
-
             }
     }
 

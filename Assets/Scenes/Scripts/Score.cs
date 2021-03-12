@@ -17,7 +17,7 @@ public class Score : MonoBehaviour
 
     private void Start()
     {
-        //Zeigt Highscores aller Level über PlayerPrefs der einzelnen LoadLevelOnCollision Skripte an
+        //Zeigt Highscores aller Level über PlayerPrefs an
 
         String minutes1 = PlayerPrefs.GetInt("HighScore Minutes", 100).ToString();
         String seconds1 = PlayerPrefs.GetInt("HighScore Seconds", 100).ToString();
