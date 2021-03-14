@@ -8,7 +8,6 @@ public class FadingGlow : MonoBehaviour
 	public Material mat;
 	public Color col;
 	public float startDelay = 3f;
-	public float timeToFade;
 	public float intensityMax = 255;
 	public float _intensity = 255;
 	public float decrease = 1;
@@ -31,8 +30,9 @@ public class FadingGlow : MonoBehaviour
 		meshCollider.enabled = false;
 	}
 
-	void Update()
+	private void FixedUpdate()
 	{
+	
 		if (startDelayDelta > startDelay)
 		{
 			if (isOn)
@@ -55,18 +55,15 @@ public class FadingGlow : MonoBehaviour
 					offTimerDelta = 0f;
 					copied.color = new Vector4(col.r, col.g, col.b, 1f);
 					t = 0f;
-					//StartCoroutine(FadingTime(timeToFade));
+
 					
 
 
 				}
 				else
 				{
-					//Debug.Log("Off:"+ offTimer);
-					//Debug.Log("Off-Delta:" + offTimerDelta);
 					offTimerDelta += Time.deltaTime;
 					FadeOutAlpha();
-
 				}
 
 
@@ -97,24 +94,4 @@ public class FadingGlow : MonoBehaviour
 
 
 
-	IEnumerator FadingTime(float time)
-	{
-		
-		copied.SetVector("_EmissionColor", col * _intensity);
-		_intensity = _intensity - decrease;
-		if (_intensity < 0)
-		{
-			 isOn = false;
-			_intensity = intensityMax;
-
-		}
-		
-		yield return new WaitForSeconds(time);
-		
-		meshCollider.enabled = true;
-        offTimerDelta = 0f;
-		copied.color = new Vector4(col.r, col.g, col.b, 1f);
-		t = 0f;
-
-	}
 }

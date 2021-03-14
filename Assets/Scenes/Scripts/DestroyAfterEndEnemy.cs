@@ -2,28 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyAfter : MonoBehaviour
+public class DestroyAfterEndEnemy : MonoBehaviour
 {
     [SerializeField]
     float fTimer;
-    ShowUI _plattform;
-
+    FinalEnemy _finalEnemy;
 
     void Start()
     {
-        _plattform = FindObjectOfType<ShowUI>();
-
+        _finalEnemy = FindObjectOfType<FinalEnemy>();
     }
 
     void Update()
     {
-        if (_plattform.playerOnPlattform)
+        if (_finalEnemy.playerOnEndPlatform)
         {
             fTimer -= Time.deltaTime;
             if (fTimer <= 0)
             {
                 Destroy(this.gameObject);
             }
+
         }
     }
 }

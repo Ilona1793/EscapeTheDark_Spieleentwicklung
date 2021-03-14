@@ -22,14 +22,12 @@ public class LoadLevelOnCollisionGeneral : MonoBehaviour
     GameController gameC;
     string timePlayingStr;
 
-    //add:
     AddPlayerControlledVelocity movement;
 
     private void Start()
     {
         gameC = FindObjectOfType<GameController>();
 
-        //add:
         movement = FindObjectOfType<AddPlayerControlledVelocity>();
 
         String minutes = PlayerPrefs.GetInt(HighScoreLevelMinutes, 100).ToString();
@@ -49,7 +47,6 @@ public class LoadLevelOnCollisionGeneral : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Goal");
             gameC.gamePlaying = false;
 
-            //add:
             movement.stopGame = true;
 
             timePlayingStr = gameC.timePlaying.ToString("mm':'ss'.'ff");

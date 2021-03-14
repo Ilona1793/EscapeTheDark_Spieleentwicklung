@@ -1414,7 +1414,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -2655,7 +2654,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -3159,7 +3157,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -3251,7 +3248,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level 5
+  m_Text: Level 4
 --- !u!222 &1160104483
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3780,7 +3777,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   col: {r: 1, g: 0.3882353, b: 0.9529412, a: 0}
   startDelay: 3
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -4971,7 +4967,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   col: {r: 1, g: 0.3882353, b: 0.9529412, a: 0}
   startDelay: 3
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -5224,7 +5219,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -5517,7 +5511,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strTag: Player
   Player: {fileID: 1363644231}
-  RespawnField: {fileID: 1624428429}
   RespawnPoints: []
   _safePoint: []
 --- !u!65 &1624428431
@@ -6538,7 +6531,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   col: {r: 1, g: 0.3882353, b: 0.9529412, a: 0}
   startDelay: 3
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -6681,7 +6673,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -7539,7 +7530,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   col: {r: 1, g: 0.3882353, b: 0.9529412, a: 0}
   startDelay: 3
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -8228,7 +8218,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1

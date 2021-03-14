@@ -48,9 +48,6 @@ public class FadeOutObject : MonoBehaviour
         meshRenderer.material.color = colorStart;
     }
 
-    /// <summary>
-    /// 
-    /// </summary>
     public void FadeOut()
     {
         if (!isFadingOut)

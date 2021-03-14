@@ -13,7 +13,6 @@ public class RestartLevelOnCollisionMultiplayer : MonoBehaviour
     [SerializeField]
     public Transform RespawnPoint;
 
-    //add:
     [SerializeField]
     public Transform RespawnPoint2;
 
@@ -30,8 +29,6 @@ public class RestartLevelOnCollisionMultiplayer : MonoBehaviour
 
         if (collision.collider.tag == "Player2") {
             FindObjectOfType<AudioManager>().Play("Fall");
-
-            //add:
             Player2.transform.position = RespawnPoint2.transform.position;
         }
 

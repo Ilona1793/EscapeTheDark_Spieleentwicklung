@@ -23,7 +23,6 @@ public class AddPlayerControlledVelocity : MonoBehaviour
 
     public bool startGame;
 
-    //add:
     public bool stopGame;
 
 
@@ -33,7 +32,6 @@ public class AddPlayerControlledVelocity : MonoBehaviour
     {
         startGame = false;
 
-        //add:
         stopGame = false;
 
         StartCoroutine(CountdownToStart());
@@ -51,7 +49,6 @@ public class AddPlayerControlledVelocity : MonoBehaviour
 
         }
 
-        //add:
         if (stopGame) 
         {
             v3Force = Vector3.zero;

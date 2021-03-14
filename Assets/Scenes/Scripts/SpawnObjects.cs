@@ -15,7 +15,6 @@ public class SpawnObjects : MonoBehaviour
 
     public int spawnCounter = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         center = transform.position;

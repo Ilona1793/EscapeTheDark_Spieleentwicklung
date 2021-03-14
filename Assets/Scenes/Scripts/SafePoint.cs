@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SafePoint : MonoBehaviour
 {
-    //mehrere Safepoints
     [SerializeField]
     public int safePointNumber;
 

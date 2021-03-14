@@ -14,14 +14,11 @@ public class GameControllerMultiplayer : MonoBehaviour
     public int countdownTime;
 
 
-    // Start wird vor erstem Frame-Update aufgerufen
     private void Start()
     {
-        //Countdown 3-2-1
         StartCoroutine(CountdownToStart());
     }
 
-    //Countdown 3-2-1
     IEnumerator CountdownToStart()
     {
         while (countdownTime > 0)

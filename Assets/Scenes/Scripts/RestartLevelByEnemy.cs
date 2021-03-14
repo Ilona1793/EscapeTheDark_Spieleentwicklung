@@ -75,38 +75,3 @@ public class RestartLevelByEnemy : MonoBehaviour
 
 
 
-
- /* 
- Debug.Log("Shield:" + shield.invulnerable);
-
-                    if (shield.invulnerable == false)
-                    {
-                        this.gameObject.transform.position = RespawnPoints[_safePoint[i].safePointNumber].transform.position;
-                    }
-  *
-  * 
-  * 
-  * for (number = 0; number < _shield.Length; i++)
-                  {
-                      //und kein Schild aktiv oder vorhanden ist: NEUSTART
-                      if (_shield[number].invulnerable == false | _shield[number] == null) { }
-                      SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-                  }
-                 
- *
- * 
- * Wenn kein Schild vorhanden oder aktiv ist wird Player an letztes Fähnchen zurückgesetzt
-                 for (number = 0; number < _shield.Length; number++)
-                 {
-                     Debug.Log("Number:" + number);
-                     Debug.Log("InvulnurableShield:" + _shield[number].invulnerable);
-                     if (_shield[number].invulnerable == true)
-                     {
-                         Debug.Log("Invulnerable:" + number);
-                         activeShield = true;
-                     }
-                 }
-                 if (activeShield == false) {
-                     this.gameObject.transform.position = RespawnPoints[_safePoint[i].safePointNumber].transform.position;
-                 }*/
-

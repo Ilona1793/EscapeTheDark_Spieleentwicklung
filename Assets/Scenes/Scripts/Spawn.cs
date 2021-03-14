@@ -18,8 +18,6 @@ public class Spawn : MonoBehaviour
     ShowUI _plattform; //neu
     FinalEnemy _finalEnemy;
 
-
-    // Start is called before the first frame update
     void Start()
     {
         fTimer = fTimeIntervals;
@@ -27,7 +25,6 @@ public class Spawn : MonoBehaviour
         _finalEnemy = FindObjectOfType<FinalEnemy>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         //neu
@@ -43,20 +40,5 @@ public class Spawn : MonoBehaviour
                 Instantiate(goCreate, transform.position, Quaternion.identity);
             }
         }
-
-       /* if (_finalEnemy.playerOnEndPlatform)
-        {
-            fTimer -= Time.deltaTime;
-            if (fTimer <= 0)
-            {
-                fTimer = fTimeIntervals;
-                Vector3 v3SpawnPos = transform.position;
-
-
-                Instantiate(goCreate, transform.position, Quaternion.identity);
-            }
-        }*/
-
-
     }
 }

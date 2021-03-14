@@ -30,9 +30,6 @@ public class GameController : MonoBehaviour
     {
         instance = this;
         _clock = FindObjectOfType<ClockItem>();
-
-        //?
-        //!!
         _audio = FindObjectOfType<AudioManager>();
 
     }
