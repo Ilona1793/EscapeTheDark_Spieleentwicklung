@@ -14,10 +14,9 @@ GameObject:
   - component: {fileID: 5470587553996755917}
   - component: {fileID: 8758924154115924552}
   - component: {fileID: 8781229183340526492}
-  - component: {fileID: -2866000541726131934}
+  - component: {fileID: 3985014734252049570}
   - component: {fileID: 1308222416117428189}
   - component: {fileID: 9069907133306282116}
-  - component: {fileID: 3985014734252049570}
   m_Layer: 0
   m_Name: Enemies 2
   m_TagString: Enemy
@@ -132,16 +131,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transTowards: {fileID: 0}
   fSpeed: 10
---- !u!114 &-2866000541726131934
+--- !u!114 &3985014734252049570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 986449404035468506}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
+  m_Script: {fileID: 11500000, guid: 79e5001b71638be4eaa3f5085270beb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fTimer: 30
@@ -177,19 +176,6 @@ MonoBehaviour:
   bSpawnSelf: 0
   bSpawnOther: 1
   goSpawn: {fileID: 4406413890653771055, guid: 6935cb76dda51e546aab2a22f961283e, type: 3}
---- !u!114 &3985014734252049570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986449404035468506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e5001b71638be4eaa3f5085270beb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fTimer: 30
 --- !u!1 &1218205904352821402
 GameObject:
   m_ObjectHideFlags: 0
