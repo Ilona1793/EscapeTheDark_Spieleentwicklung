@@ -1486,7 +1486,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 1}
   startDelay: 3
-  timeToFade: 4
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -2587,7 +2586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strTag: Player
   Player: {fileID: 1363644231}
-  RespawnField: {fileID: 1624428429}
   RespawnPoints: []
   _safePoint: []
 --- !u!65 &1624428431
@@ -2611,7 +2609,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624428429}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 3
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2658,8 +2656,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624428429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56, y: 122.1, z: 128.7}
-  m_LocalScale: {x: 154.58769, y: 0.7596003, z: 243.34161}
+  m_LocalPosition: {x: 56, y: 130.1, z: 106.3}
+  m_LocalScale: {x: 100.341324, y: 0.7596003, z: 197.53499}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -4130,7 +4128,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 1}
   startDelay: 1
-  timeToFade: 4
   intensityMax: 255
   _intensity: 255
   decrease: 1

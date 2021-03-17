@@ -45,7 +45,8 @@ public class SpawnObjects : MonoBehaviour
 
     private bool checkForObjectsBelow(Vector3 pos)
     {
-        return Physics.Raycast(pos, Vector3.down, 5f);
+       return Physics.Raycast(pos, Vector3.down, 5f);
+       // return Physics.BoxCast(pos, Vector3.down, 5f);
     }
 
     private void OnDrawGizmosSelected()
