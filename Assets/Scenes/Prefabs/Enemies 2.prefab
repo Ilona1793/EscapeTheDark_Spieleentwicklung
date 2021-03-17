@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 3985014734252049570}
   - component: {fileID: 1308222416117428189}
   - component: {fileID: 9069907133306282116}
+  - component: {fileID: 4542008462343750570}
   m_Layer: 0
   m_Name: Enemies 2
   m_TagString: Enemy
@@ -67,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6573a2d7dfb4bff4dbe7e2b2b7272e2a, type: 2}
+  - {fileID: 2100000, guid: 3f418f1e35e7cb848bb661db940f94e9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -176,6 +177,19 @@ MonoBehaviour:
   bSpawnSelf: 0
   bSpawnOther: 1
   goSpawn: {fileID: 4406413890653771055, guid: 6935cb76dda51e546aab2a22f961283e, type: 3}
+--- !u!114 &4542008462343750570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 986449404035468506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alphaValue: 0.5
 --- !u!1 &1218205904352821402
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,6 +201,7 @@ GameObject:
   - component: {fileID: 1224718669954996372}
   - component: {fileID: 1675947252800230471}
   - component: {fileID: 8213812000536630445}
+  - component: {fileID: 7122707277831524816}
   m_Layer: 0
   m_Name: Enemies 1 (1)
   m_TagString: Enemy
@@ -234,7 +249,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0a50a398630e99d4bb58a3c7904c4faa, type: 2}
+  - {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -255,6 +270,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &7122707277831524816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218205904352821402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alphaValue: 0.005
 --- !u!1 &2370620739760653426
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,6 +294,7 @@ GameObject:
   - component: {fileID: 682319837108165343}
   - component: {fileID: 5433343074152593847}
   - component: {fileID: 7796383386019340314}
+  - component: {fileID: 294369073122967026}
   m_Layer: 0
   m_Name: Enemies 1 (2)
   m_TagString: Enemy
@@ -313,7 +342,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0a50a398630e99d4bb58a3c7904c4faa, type: 2}
+  - {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -334,6 +363,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &294369073122967026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370620739760653426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alphaValue: 0.005
 --- !u!1 &6430211693762659341
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,6 +387,7 @@ GameObject:
   - component: {fileID: 3440712872346767543}
   - component: {fileID: 1030315518001819241}
   - component: {fileID: 7533881942531579515}
+  - component: {fileID: 1974118349793992635}
   m_Layer: 0
   m_Name: Enemies 1
   m_TagString: Enemy
@@ -413,3 +456,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &1974118349793992635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6430211693762659341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alphaValue: 0.5

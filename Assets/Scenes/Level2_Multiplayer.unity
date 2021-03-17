@@ -1442,7 +1442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892204339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45, y: 146.92, z: 40.5}
+  m_LocalPosition: {x: 44.82, y: 146.92, z: 40.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 818676195}
@@ -1696,7 +1696,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159241023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.4, y: 146.92, z: 40.5}
+  m_LocalPosition: {x: 48.410004, y: 146.92, z: 40.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1685747666}
@@ -2139,7 +2139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363644224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.38, y: 147.29, z: 40.9}
+  m_LocalPosition: {x: 45.32, y: 147.29, z: 40.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 295581275}
@@ -2409,7 +2409,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 3
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -2748,7 +2747,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631041938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.6, y: 147.29, z: 40.9}
+  m_LocalPosition: {x: 48.61, y: 147.29, z: 40.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463607864}
