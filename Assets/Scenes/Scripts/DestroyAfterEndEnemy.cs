@@ -5,25 +5,40 @@ using UnityEngine;
 public class DestroyAfterEndEnemy : MonoBehaviour
 {
     [SerializeField]
-    float fTimer;
-    FinalEnemy _finalEnemy;
+    string strTag;
 
-    void Start()
-    {
-        _finalEnemy = FindObjectOfType<FinalEnemy>();
-    }
+    [SerializeField]
+    bool bDestroySelf = false;
 
-    void Update()
+    [SerializeField]
+    bool bDestroyOther = false;
+
+    public int life;
+
+    Shield shield;
+
+    public GameObject wall;
+
+    private void OnCollisionEnter(Collision collision)
     {
-        if (_finalEnemy.playerOnEndPlatform)
+        if (collision.collider.tag == strTag)
         {
-            fTimer -= Time.deltaTime;
-            if (fTimer <= 0)
+            if (shield != null && shield.invulnerable == true)
             {
-                Destroy(this.gameObject);
+                bDestroyOther = false; //Player soll nicht zerstört werden
+
+
             }
 
+            if (life <= 0)
+            {
+                Destroy(this.gameObject);
+                wall.gameObject.SetActive(false);
+            }
+
+            life = life - 1;
         }
+
     }
 }
 

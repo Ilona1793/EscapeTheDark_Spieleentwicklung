@@ -9,6 +9,8 @@ public class FinalEnemy : MonoBehaviour
 
     public bool playerOnEndPlatform;
 
+    public GameObject enemy;
+
     void Start()
     {
         textFinalEnemy.gameObject.SetActive(false);
@@ -18,6 +20,7 @@ public class FinalEnemy : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
+            enemy.gameObject.SetActive(true);
             playerOnEndPlatform = true;
             StartCoroutine(showDefeatText());
         }
