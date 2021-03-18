@@ -5121,20 +5121,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 786481007}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &786481010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786481009}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5ad3b22e82478b42901ff557982c940, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invulnerabilityTime: 10
-  invulnerable: 0
 --- !u!64 &786481011
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10030,7 +10016,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: b18d70bd8f5bac1468cd93fce640d44c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: b18d70bd8f5bac1468cd93fce640d44c,
         type: 3}
@@ -10251,6 +10237,8 @@ MonoBehaviour:
   textFinalEnemy: {fileID: 344740633}
   playerOnEndPlatform: 0
   enemy: {fileID: 1243814989}
+  fTimer: 30
+  wall: {fileID: 112367874}
 --- !u!1 &1695803697
 GameObject:
   m_ObjectHideFlags: 0

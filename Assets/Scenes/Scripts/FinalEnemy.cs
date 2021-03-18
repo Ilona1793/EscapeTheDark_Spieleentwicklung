@@ -11,19 +11,42 @@ public class FinalEnemy : MonoBehaviour
 
     public GameObject enemy;
 
+    [SerializeField]
+    float fTimer;
+
+
+    public GameObject wall;
+
+
     void Start()
     {
         textFinalEnemy.gameObject.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void Update()
+    {
+        if (playerOnEndPlatform)
+        {
+            fTimer -= Time.deltaTime;
+            if (fTimer <= 0)
+            {
+                //enemy.gameObject.SetActive(false);
+                textFinalEnemy.text = "Escape";
+                wall.gameObject.SetActive(false);
+            }
+        }
+    }
+        private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == "Player")
         {
             enemy.gameObject.SetActive(true);
             playerOnEndPlatform = true;
             StartCoroutine(showDefeatText());
+
+            
         }
+        
     }
 
     IEnumerator showDefeatText()

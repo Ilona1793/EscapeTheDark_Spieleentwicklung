@@ -23,12 +23,13 @@ public class Shield : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+        private void OnTriggerEnter(Collider other)
     {
             if (other.CompareTag("Shield"))
             {
                 FindObjectOfType<AudioManager>().Play("Shield");
                 Destroy(other.gameObject);
+                //other.gameObject.SetActive(false);
                 StartCoroutine(InvulnerabilityTime(invulnerabilityTime));
             }
     }
