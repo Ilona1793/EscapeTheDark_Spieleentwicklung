@@ -22,7 +22,7 @@ public class SpawnObjects : MonoBehaviour
         for (int i = 0; i < spawnAmount; i++)
         {
             SpawnBackgroundObjects();
-           
+
         }
     }
 
@@ -45,8 +45,9 @@ public class SpawnObjects : MonoBehaviour
 
     private bool checkForObjectsBelow(Vector3 pos)
     {
-       return Physics.Raycast(pos, Vector3.down, 5f);
-       // return Physics.BoxCast(pos, Vector3.down, 5f);
+
+        return Physics.Raycast(pos, Vector3.down, 5f) || Physics.Raycast(pos, Vector3.up, 5f) || Physics.Raycast(pos, Vector3.right, 5f) || Physics.Raycast(pos, Vector3.left, 5f) || Physics.Raycast(pos, Vector3.forward, 5f) || Physics.Raycast(pos, Vector3.back, 5f);
+        // return Physics.BoxCast(pos, Vector3.down, 5f);
     }
 
     private void OnDrawGizmosSelected()
@@ -62,6 +63,6 @@ public class SpawnObjects : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
- }
+}
 
 

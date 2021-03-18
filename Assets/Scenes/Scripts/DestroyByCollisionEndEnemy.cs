@@ -22,39 +22,72 @@ public class DestroyByCollisionEndEnemy : MonoBehaviour
 
     public Text textWin;
 
-   
+    public float pushForce = 25f;
+
+    public float invincibilityTime = 0.5f;
+    private float invincibilityTimeDelta = 0f;
+    private bool isInvincible = false;
+
+    private SphereCollider sCollider;
+
+    public FinalEnemy finalEnemyScript;
+
+    private void Start()
+    {
+        sCollider = GetComponent<SphereCollider>();
+        if(finalEnemyScript == null)
+        {
+            finalEnemyScript = FindObjectOfType<FinalEnemy>();
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.tag == strTag)
+        if (!isInvincible)
         {
-            if (shield != null && shield.invulnerable == true)
+            if (collision.collider.tag == strTag)
             {
-                bDestroyOther = false; //Player soll nicht zerstört werden
+                Vector3 direction = transform.position - collision.transform.position;
 
+                GetComponent<Rigidbody>().AddForce(direction.normalized * pushForce, ForceMode.Impulse);
 
-            }
+                sCollider.enabled = false;
+                isInvincible = true;
 
-            if (life <= 0)
-            {
-                Destroy(this.gameObject);
-                wall.gameObject.SetActive(false);
-                StartCoroutine(showGreatText());
+                if (shield != null && shield.invulnerable == true)
+                {
+                    bDestroyOther = false; //Player soll nicht zerstört werden
+                }
+
+                if (life <= 0)
+                {
+                    wall.gameObject.SetActive(false);
+                    finalEnemyScript.enemyDefeated();
+                    Destroy(this.gameObject);
+                }
+
+                life = life - 1;
                 
             }
-
-            life = life - 1;
         }
+            
 
     }
 
-    IEnumerator showGreatText()
+    public void Update()
     {
-        textWin.gameObject.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        textWin.gameObject.SetActive(false);
-
+        if (invincibilityTimeDelta > invincibilityTime && isInvincible)
+        {
+            isInvincible = false;
+            invincibilityTimeDelta = 0f;
+            sCollider.enabled = true;
+        }
+        else if (isInvincible)
+        {
+            invincibilityTimeDelta += Time.deltaTime;
+        }
     }
+
 }
 
 

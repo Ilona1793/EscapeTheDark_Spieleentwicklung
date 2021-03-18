@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3e604651742ba342b1401e4a26025fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  wall: {fileID: 1872980295}
   uiObject: {fileID: 793730463}
   playerOnPlattform: 0
   sliderEnemies: {fileID: 220693898}
@@ -948,7 +949,6 @@ GameObject:
   m_Component:
   - component: {fileID: 81210090}
   - component: {fileID: 81210089}
-  - component: {fileID: 81210088}
   m_Layer: 0
   m_Name: Spawner (1)
   m_TagString: Untagged
@@ -956,19 +956,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &81210088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 81210087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fTimer: 2
 --- !u!114 &81210089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5931,7 +5918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.77254903, g: 0.047058824, b: 0.3372549, a: 1}
+  m_Color: {r: 0.121568635, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6178,7 +6165,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1597790563}
   - component: {fileID: 1597790562}
-  - component: {fileID: 1597790564}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -6217,19 +6203,6 @@ Transform:
   m_Father: {fileID: 464175321}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1597790564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1597790561}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fTimer: 5
 --- !u!1001 &1603544573
 PrefabInstance:
   m_ObjectHideFlags: 0

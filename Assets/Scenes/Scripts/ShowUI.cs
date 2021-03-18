@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ShowUI : MonoBehaviour
 {
+    public GameObject wall;
 
     public GameObject uiObject;
     public bool playerOnPlattform;
@@ -18,6 +19,7 @@ public class ShowUI : MonoBehaviour
     void Start()
     {
         uiObject.SetActive(false);
+        wall.SetActive(false);
         sliderEnemies.gameObject.SetActive(false);
         countdownTextEnemies.gameObject.SetActive(false);
         playerOnPlattform = false;
@@ -31,10 +33,10 @@ public class ShowUI : MonoBehaviour
         {
             playerOnPlattform = true;
             uiObject.SetActive(true);
+            wall.SetActive(true);
             sliderEnemies.gameObject.SetActive(true);
             surviveTestActive = true;
-            //StartCoroutine("WaitForSec");
-            //StartCoroutine(CountdownEnemies());
+
         }
     }
 
@@ -77,6 +79,7 @@ public class ShowUI : MonoBehaviour
             countdownTimeEnemies = 15;
             sliderEnemies.value = countdownTimeEnemies;
             uiObject.SetActive(false);
+            wall.SetActive(false);
             sliderEnemies.gameObject.SetActive(false);
         }
     }
@@ -90,29 +93,6 @@ public class ShowUI : MonoBehaviour
             Destroy(this);
         }
     }
-   //IEnumerator CountdownEnemies()
-   // {
-   //     while (countdownTimeEnemies > 0)
-   //     {
-   //         if (playerOnPlattform)
-   //         {
-   //             sliderEnemies.value = countdownTimeEnemies;
-
-   //             yield return new WaitForSeconds(0.05f);
-
-   //             countdownTimeEnemies -= Time.deltaTime;
-   //         }
-
-   //     }
-
-   //     sliderEnemies.gameObject.SetActive(false);
-   //     yield return new WaitForSeconds(0.5f);
-   //     countdownTextEnemies.gameObject.SetActive(true);
-   //     yield return new WaitForSeconds(2f);
-   //     countdownTextEnemies.gameObject.SetActive(false);
-
-   //     Destroy(this);
-   // }
 
     public bool isTimerZero()
     {
