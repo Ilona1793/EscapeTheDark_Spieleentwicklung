@@ -99,7 +99,7 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: CollisionEnemy
-    clip: {fileID: 8300000, guid: 9026b1343d5ebe3409c3c3085d887100, type: 3}
+    clip: {fileID: 8300000, guid: 5af144c7deb1ee74c82ffc761dc682d5, type: 3}
     volume: 0.446
     pitch: 1.12
     loop: 0
