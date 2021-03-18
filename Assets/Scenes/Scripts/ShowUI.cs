@@ -10,52 +10,112 @@ public class ShowUI : MonoBehaviour
     public bool playerOnPlattform;
 
     public Slider sliderEnemies;
-    public int countdownTimeEnemies;
+    public float countdownTimeEnemies = 15f;
     public Text countdownTextEnemies;
+
+    public bool surviveTestActive = false;
 
     void Start()
     {
         uiObject.SetActive(false);
         sliderEnemies.gameObject.SetActive(false);
         countdownTextEnemies.gameObject.SetActive(false);
-        playerOnPlattform =  false;
+        playerOnPlattform = false;
+        sliderEnemies.maxValue = countdownTimeEnemies;
     }
 
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
-        if (collision.collider.tag == "Player")
+        if (collision.tag == "Player")
         {
             playerOnPlattform = true;
             uiObject.SetActive(true);
             sliderEnemies.gameObject.SetActive(true);
-            StartCoroutine("WaitForSec");
-            StartCoroutine("CountdownEnemies");
+            surviveTestActive = true;
+            //StartCoroutine("WaitForSec");
+            //StartCoroutine(CountdownEnemies());
         }
     }
-    IEnumerator WaitForSec()
-    {
-        yield return new WaitForSeconds(2f);
-        Destroy(uiObject);
-    }
 
-    IEnumerator CountdownEnemies()
-    {
-        sliderEnemies.maxValue = countdownTimeEnemies;
 
-        while (countdownTimeEnemies > 0)
+    private void Update()
+    {
+        if (playerOnPlattform)
         {
+            if (countdownTimeEnemies > 0)
+            {
+                countdownTimeEnemies -= Time.deltaTime;
+                sliderEnemies.value = countdownTimeEnemies;
+            }
+        }
+        else
+        {
+            countdownTimeEnemies = 15f;
             sliderEnemies.value = countdownTimeEnemies;
-           
-            yield return new WaitForSeconds(0.05f);
+        }
+        if (isTimerZero())
+        {
+            countdownTextEnemies.gameObject.SetActive(true);
 
-            countdownTimeEnemies -=1;
+            sliderEnemies.gameObject.SetActive(false);
+            StartCoroutine(waitSecondsBeforeDisable(2f, countdownTextEnemies.gameObject, true));
+
+        }
+        if (surviveTestActive)
+        {
+            StartCoroutine(waitSecondsBeforeDisable(1f, uiObject, false));
         }
 
-        sliderEnemies.gameObject.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        countdownTextEnemies.gameObject.SetActive(true);
-        yield return new WaitForSeconds(2f);
-        countdownTextEnemies.gameObject.SetActive(false);
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            playerOnPlattform = false;
+            countdownTimeEnemies = 15;
+            sliderEnemies.value = countdownTimeEnemies;
+            uiObject.SetActive(false);
+            sliderEnemies.gameObject.SetActive(false);
+        }
+    }
+    IEnumerator waitSecondsBeforeDisable(float timeToWait, GameObject goDisable, bool destroyAfter)
+    {
+        yield return new WaitForSeconds(timeToWait);
+        goDisable.SetActive(false);
+        surviveTestActive = false;
+        if (destroyAfter)
+        {
+            Destroy(this);
+        }
+    }
+   //IEnumerator CountdownEnemies()
+   // {
+   //     while (countdownTimeEnemies > 0)
+   //     {
+   //         if (playerOnPlattform)
+   //         {
+   //             sliderEnemies.value = countdownTimeEnemies;
+
+   //             yield return new WaitForSeconds(0.05f);
+
+   //             countdownTimeEnemies -= Time.deltaTime;
+   //         }
+
+   //     }
+
+   //     sliderEnemies.gameObject.SetActive(false);
+   //     yield return new WaitForSeconds(0.5f);
+   //     countdownTextEnemies.gameObject.SetActive(true);
+   //     yield return new WaitForSeconds(2f);
+   //     countdownTextEnemies.gameObject.SetActive(false);
+
+   //     Destroy(this);
+   // }
+
+    public bool isTimerZero()
+    {
+        return countdownTimeEnemies <= 0;
     }
 }

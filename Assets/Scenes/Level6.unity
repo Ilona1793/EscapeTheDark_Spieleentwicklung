@@ -367,8 +367,22 @@ MonoBehaviour:
   uiObject: {fileID: 793730463}
   playerOnPlattform: 0
   sliderEnemies: {fileID: 773752601}
-  countdownTimeEnemies: 1450
+  countdownTimeEnemies: 15
   countdownTextEnemies: {fileID: 1473350326}
+  surviveTestActive: 0
+--- !u!65 &25200451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25200448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 12.983134, z: 1.7320509}
+  m_Center: {x: 0, y: 5.491596, z: 0.00000093435153}
 --- !u!1001 &34253915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1228,7 +1242,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 81210087}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
   m_Name: 
@@ -1246,9 +1260,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433dcd75beb8f904f806517da8f424b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAmount: 1
   goCreate: {fileID: 986449404035468506, guid: 3d4046a50da27494a88b6c94bf357ffd, type: 3}
   fTimeIntervals: 1
   v3SpawnPosJitter: {x: 9, y: 0, z: 7}
+  currentlySpawned: []
 --- !u!4 &81210090
 Transform:
   m_ObjectHideFlags: 0
@@ -7780,7 +7796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363644224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47, y: 147.2, z: 41.03}
+  m_LocalPosition: {x: 46.49, y: 147.36, z: 41.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 295581275}
@@ -9089,9 +9105,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433dcd75beb8f904f806517da8f424b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAmount: 2
   goCreate: {fileID: 986449404035468506, guid: 3d4046a50da27494a88b6c94bf357ffd, type: 3}
   fTimeIntervals: 2
   v3SpawnPosJitter: {x: 9, y: 0, z: 7}
+  currentlySpawned: []
 --- !u!4 &1597790563
 Transform:
   m_ObjectHideFlags: 0
@@ -9113,7 +9131,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1597790561}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9f164cc0225c5646aa25cd76905b380, type: 3}
   m_Name: 

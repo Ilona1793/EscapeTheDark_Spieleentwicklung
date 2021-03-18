@@ -202,9 +202,10 @@ GameObject:
   - component: {fileID: 1675947252800230471}
   - component: {fileID: 8213812000536630445}
   - component: {fileID: 7122707277831524816}
+  - component: {fileID: 4439359769596978817}
   m_Layer: 0
   m_Name: Enemies 1 (1)
-  m_TagString: Enemy
+  m_TagString: FadeOut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,7 +283,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaValue: 0.005
+  alphaValue: 0.0025
+--- !u!64 &4439359769596978817
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218205904352821402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2370620739760653426
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,9 +310,10 @@ GameObject:
   - component: {fileID: 5433343074152593847}
   - component: {fileID: 7796383386019340314}
   - component: {fileID: 294369073122967026}
+  - component: {fileID: 2883948359552336961}
   m_Layer: 0
   m_Name: Enemies 1 (2)
-  m_TagString: Enemy
+  m_TagString: FadeOut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -375,7 +391,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaValue: 0.005
+  alphaValue: 0.0025
+--- !u!64 &2883948359552336961
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2370620739760653426}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &6430211693762659341
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,9 +418,10 @@ GameObject:
   - component: {fileID: 1030315518001819241}
   - component: {fileID: 7533881942531579515}
   - component: {fileID: 1974118349793992635}
+  - component: {fileID: 4346116835081208347}
   m_Layer: 0
   m_Name: Enemies 1
-  m_TagString: Enemy
+  m_TagString: FadeOut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -435,7 +466,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 0a50a398630e99d4bb58a3c7904c4faa, type: 2}
+  - {fileID: 2100000, guid: d51f4407adbc3934198df506c4fc61c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -468,4 +499,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90db1c1e4dd02584da851ad6de9ac039, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaValue: 0.5
+  alphaValue: 0.0025
+--- !u!64 &4346116835081208347
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6430211693762659341}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
