@@ -308,8 +308,22 @@ MonoBehaviour:
   uiObject: {fileID: 793730463}
   playerOnPlattform: 0
   sliderEnemies: {fileID: 220693898}
-  countdownTimeEnemies: 750
+  countdownTimeEnemies: 15
   countdownTextEnemies: {fileID: 871286879}
+  surviveTestActive: 0
+--- !u!65 &25200451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25200448}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 8.945506, z: 1.7320509}
+  m_Center: {x: 0, y: 3.4727836, z: 0}
 --- !u!1001 &36181583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -967,9 +981,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433dcd75beb8f904f806517da8f424b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAmount: 1
   goCreate: {fileID: 986449404035468506, guid: 3d4046a50da27494a88b6c94bf357ffd, type: 3}
   fTimeIntervals: 1
   v3SpawnPosJitter: {x: 9, y: 0, z: 7}
+  currentlySpawned: []
 --- !u!4 &81210090
 Transform:
   m_ObjectHideFlags: 0
@@ -6182,9 +6198,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433dcd75beb8f904f806517da8f424b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnAmount: 2
   goCreate: {fileID: 986449404035468506, guid: 3d4046a50da27494a88b6c94bf357ffd, type: 3}
   fTimeIntervals: 2
   v3SpawnPosJitter: {x: 9, y: 0, z: 7}
+  currentlySpawned: []
 --- !u!4 &1597790563
 Transform:
   m_ObjectHideFlags: 0
