@@ -86,3 +86,21 @@ MonoBehaviour:
     pitch: 1.12
     loop: 0
     source: {fileID: 0}
+  - name: Flag
+    clip: {fileID: 8300000, guid: 4ce7685f0ad1ed44a961782cbe5f7055, type: 3}
+    volume: 0.446
+    pitch: 1.12
+    loop: 0
+    source: {fileID: 0}
+  - name: Shield
+    clip: {fileID: 8300000, guid: 197391cb4e819c84380fdac3d8530b18, type: 3}
+    volume: 0.446
+    pitch: 1.12
+    loop: 0
+    source: {fileID: 0}
+  - name: CollisionEnemy
+    clip: {fileID: 8300000, guid: 9026b1343d5ebe3409c3c3085d887100, type: 3}
+    volume: 0.446
+    pitch: 1.12
+    loop: 0
+    source: {fileID: 0}

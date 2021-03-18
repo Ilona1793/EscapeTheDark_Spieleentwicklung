@@ -39,7 +39,7 @@ public class DestroyByCollisionEndEnemy : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 wall.gameObject.SetActive(false);
-                StartCoroutine(showGreatText());
+               // StartCoroutine(showGreatText());
                 
             }
 
