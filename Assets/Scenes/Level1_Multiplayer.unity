@@ -566,7 +566,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325112421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.5, y: 146.92, z: 40.5}
+  m_LocalPosition: {x: 48.39, y: 146.92, z: 40.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 415232811}
@@ -1625,7 +1625,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 3
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
@@ -2083,7 +2082,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363608825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.1, y: 146.92, z: 40.5}
+  m_LocalPosition: {x: 45.04, y: 146.92, z: 40.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494432266}
@@ -2234,7 +2233,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363644224}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 45.329998, y: 147.29, z: 40.9}
+  m_LocalPosition: {x: 45.27, y: 147.29, z: 40.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 295581275}
@@ -2653,7 +2652,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624428429}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 3
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -2700,8 +2699,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624428429}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 56, y: 122.1, z: 84}
-  m_LocalScale: {x: 154.58769, y: 0.7596003, z: 243.34161}
+  m_LocalPosition: {x: 56, y: 124.2, z: 105.7}
+  m_LocalScale: {x: 106.48618, y: 0.7596003, z: 203.7986}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -4215,7 +4214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2117239204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.699997, y: 147.29, z: 40.9}
+  m_LocalPosition: {x: 48.589996, y: 147.29, z: 40.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1915168549}
@@ -4377,7 +4376,6 @@ MonoBehaviour:
   mat: {fileID: 2100000, guid: fc3e933e72bd6f745ad4f92828e58979, type: 2}
   col: {r: 0, g: 0.7490196, b: 0.7490196, a: 0}
   startDelay: 1
-  timeToFade: 1
   intensityMax: 255
   _intensity: 255
   decrease: 1
