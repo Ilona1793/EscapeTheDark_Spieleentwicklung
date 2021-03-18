@@ -20,7 +20,7 @@ public class SafePoint : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            FindObjectOfType<AudioManager>().Play("Clock");
+            FindObjectOfType<AudioManager>().Play("Flag");
             respawnPlayer = true;
             this.gameObject.SetActive(false);
             

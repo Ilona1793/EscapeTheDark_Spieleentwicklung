@@ -43,7 +43,7 @@ public class RestartLevelByEnemy : MonoBehaviour
         //Bei Kollision wird geprüft, ob Fahne gesammelt wurde und Player dorthin zurückgesetzt, wenn kein Schild eingesammelt wurde
         if (collision.collider.tag == "Enemy")
         {
-            FindObjectOfType<AudioManager>().Play("Fall");
+            FindObjectOfType<AudioManager>().Play("CollisionEnemy");
 
             for (i = 0; i < _safePoint.Length; i++)
             {

@@ -27,7 +27,7 @@ public class Shield : MonoBehaviour
     {
             if (other.CompareTag("Shield"))
             {
-                FindObjectOfType<AudioManager>().Play("Clock");
+                FindObjectOfType<AudioManager>().Play("Shield");
                 Destroy(other.gameObject);
                 StartCoroutine(InvulnerabilityTime(invulnerabilityTime));
             }
@@ -42,7 +42,7 @@ public class Shield : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
-        FindObjectOfType<AudioManager>().Play("Clock");
+        FindObjectOfType<AudioManager>().Play("Shield");
         this.gameObject.GetComponent<Renderer>().material.SetColor("_Color", standard);
         invulnerable = false;
         //Für Collision ist Shield auch wieder deaktiviert
