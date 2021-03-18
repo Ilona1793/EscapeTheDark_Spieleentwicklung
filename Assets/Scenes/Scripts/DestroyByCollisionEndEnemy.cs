@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DestroyAfterEndEnemy : MonoBehaviour
+public class DestroyByCollisionEndEnemy : MonoBehaviour
 {
     [SerializeField]
     string strTag;
@@ -19,6 +20,10 @@ public class DestroyAfterEndEnemy : MonoBehaviour
 
     public GameObject wall;
 
+    public Text textWin;
+
+   
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.tag == strTag)
@@ -34,10 +39,20 @@ public class DestroyAfterEndEnemy : MonoBehaviour
             {
                 Destroy(this.gameObject);
                 wall.gameObject.SetActive(false);
+                StartCoroutine(showGreatText());
+                
             }
 
             life = life - 1;
         }
+
+    }
+
+    IEnumerator showGreatText()
+    {
+        textWin.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        textWin.gameObject.SetActive(false);
 
     }
 }
