@@ -47,7 +47,7 @@ public class SpawnObjects : MonoBehaviour
     {
 
         return Physics.Raycast(pos, Vector3.down, 5f) || Physics.Raycast(pos, Vector3.up, 5f) || Physics.Raycast(pos, Vector3.right, 5f) || Physics.Raycast(pos, Vector3.left, 5f) || Physics.Raycast(pos, Vector3.forward, 5f) || Physics.Raycast(pos, Vector3.back, 5f);
-        // return Physics.BoxCast(pos, Vector3.down, 5f);
+        
     }
 
     private void OnDrawGizmosSelected()

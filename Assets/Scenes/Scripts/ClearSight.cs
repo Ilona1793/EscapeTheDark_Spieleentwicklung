@@ -26,11 +26,9 @@ public class ClearSight : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// If the distance of the hit object is less than the distance to the player the object is in between the player and camera
-    /// </summary>
-    /// <param name="distance"></param>
-    /// <returns></returns>
+ 
+    // If the distance of the hit object is less than the distance to the player the object is in between the player and camera
+   
     private bool IsInFrontOfPlayer(float distance)
     {
         float distanceToPlayer = Vector3.Distance(playerTransform.position, transform.position);

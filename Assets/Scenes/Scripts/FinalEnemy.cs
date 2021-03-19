@@ -62,7 +62,7 @@ public class FinalEnemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            playerOnEndPlatform = true;
+            playerOnEndPlatform = false;
             resetEnemy();
             sliderEnemies.gameObject.SetActive(false);
         }
